@@ -112,7 +112,45 @@ return require('packer').startup(function(use)
             require('lualine').setup({
                 options = { theme = 'auto', section_separators = '', component_separators = '' }
             })
-        end
+        end,
     })
+
+
+    use {
+        'akinsho/bufferline.nvim',
+        tag = "*",
+        requires = 'nvim-tree/nvim-web-devicons',
+        config = function()
+            require("bufferline").setup {
+                options = {
+                    mode = "buffers", 
+                    numbers = "ordinal",
+                    diagnostics = "nvim_lsp",
+                    separator_style = "slant",
+                    show_buffer_close_icons = true,
+                    show_close_icon = false,
+                    always_show_bufferline = true,
+                    offsets = {
+                        {
+                            filetype = "NvimTree",
+                            text = "File Explorer",
+                            highlight = "Directory",
+                            separator = true
+                        }
+                    },
+                },
+            }
+
+            vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>', { silent = true })
+            vim.keymap.set('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', { silent = true })
+
+            for i = 1, 9 do
+                vim.keymap.set('n', '<A-' .. i .. '>', '<Cmd>BufferLineGoToBuffer ' .. i .. '<CR>', { silent = true })
+            end
+
+            vim.keymap.set('n', '<C-h>', ':BufferLineCyclePrev<CR>', { silent = true })
+            vim.keymap.set('n', '<C-l>', ':BufferLineCycleNext<CR>', { silent = true })
+        end
+    }
 
 end)
