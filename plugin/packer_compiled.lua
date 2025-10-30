@@ -111,13 +111,13 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["competitest.nvim"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\16competitest\frequire\0" },
+    config = { "\27LJ\2\n≥\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\14editor_ui\1\0\4\rshow_rnu\1\fshow_nu\2\17popup_height\4≥ÊÃô\3≥Êåˇ\3\16popup_width\4ö≥ÊÃ\tô≥Ê˛\3\1\0\4*start_receiving_persistently_on_setup\2\26receive_print_message\2\14editor_ui\0\27receiver_problems_path@D:/Problems/Contests/$(JUDGE)/$(CONTEST)/$(PROBLEM).$(FEXT)\nsetup\16competitest\frequire\0" },
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\competitest.nvim",
     url = "https://github.com/xeluxee/competitest.nvim"
   },
   ["copilot.lua"] = {
-    config = { "\27LJ\2\n·\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\npanel\1\0\1\fenabled\2\15suggestion\1\0\2\15suggestion\0\npanel\0\vkeymap\1\0\4\tprev\n<M-[>\fdismiss\n<C-]>\tnext\n<M-]>\vaccept\n<C-l>\1\0\3\vkeymap\0\fenabled\2\17auto_trigger\2\nsetup\fcopilot\frequire\0" },
+    config = { "\27LJ\2\n·\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\npanel\1\0\1\fenabled\2\15suggestion\1\0\2\15suggestion\0\npanel\0\vkeymap\1\0\4\tprev\n<M-[>\vaccept\n<C-l>\fdismiss\n<C-]>\tnext\n<M-]>\1\0\3\fenabled\2\vkeymap\0\17auto_trigger\2\nsetup\fcopilot\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -133,6 +133,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lualine.nvim"] = {
+    config = { "\27LJ\2\nç\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\foptions\1\0\1\foptions\0\1\0\3\23section_separators\5\ntheme\tauto\25component_separators\5\nsetup\flualine\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -164,6 +170,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -180,7 +192,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["presence.nvim"] = {
-    config = { "\27LJ\2\nÍ\2\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\v\22neovim_image_text\15Neovim IDE\17editing_text\15Editing %s\19workspace_text\18Working on %s\17reading_text\15Reading %s\24plugin_manager_text\21Managing plugins\20git_commit_text\23Committing changes\23file_explorer_text\16Browsing %s\21line_number_text\22Line %s out of %s\15main_image\vneovim\21debounce_timeout\3\n\23enable_line_number\2\nsetup\rpresence\frequire\0" },
+    config = { "\27LJ\2\nÍ\2\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\v\17editing_text\15Editing %s\17reading_text\15Reading %s\15main_image\vneovim\19workspace_text\18Working on %s\23enable_line_number\2\21debounce_timeout\3\n\22neovim_image_text\15Neovim IDE\21line_number_text\22Line %s out of %s\23file_explorer_text\16Browsing %s\20git_commit_text\23Committing changes\24plugin_manager_text\21Managing plugins\nsetup\rpresence\frequire\0" },
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\presence.nvim",
     url = "https://github.com/andweeb/presence.nvim"
@@ -211,20 +223,24 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: presence.nvim
 time([[Config for presence.nvim]], true)
-try_loadstring("\27LJ\2\nÍ\2\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\v\22neovim_image_text\15Neovim IDE\17editing_text\15Editing %s\19workspace_text\18Working on %s\17reading_text\15Reading %s\24plugin_manager_text\21Managing plugins\20git_commit_text\23Committing changes\23file_explorer_text\16Browsing %s\21line_number_text\22Line %s out of %s\15main_image\vneovim\21debounce_timeout\3\n\23enable_line_number\2\nsetup\rpresence\frequire\0", "config", "presence.nvim")
+try_loadstring("\27LJ\2\nÍ\2\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\v\17editing_text\15Editing %s\17reading_text\15Reading %s\15main_image\vneovim\19workspace_text\18Working on %s\23enable_line_number\2\21debounce_timeout\3\n\22neovim_image_text\15Neovim IDE\21line_number_text\22Line %s out of %s\23file_explorer_text\16Browsing %s\20git_commit_text\23Committing changes\24plugin_manager_text\21Managing plugins\nsetup\rpresence\frequire\0", "config", "presence.nvim")
 time([[Config for presence.nvim]], false)
--- Config for: competitest.nvim
-time([[Config for competitest.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\16competitest\frequire\0", "config", "competitest.nvim")
-time([[Config for competitest.nvim]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: competitest.nvim
+time([[Config for competitest.nvim]], true)
+try_loadstring("\27LJ\2\n≥\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\14editor_ui\1\0\4\rshow_rnu\1\fshow_nu\2\17popup_height\4≥ÊÃô\3≥Êåˇ\3\16popup_width\4ö≥ÊÃ\tô≥Ê˛\3\1\0\4*start_receiving_persistently_on_setup\2\26receive_print_message\2\14editor_ui\0\27receiver_problems_path@D:/Problems/Contests/$(JUDGE)/$(CONTEST)/$(PROBLEM).$(FEXT)\nsetup\16competitest\frequire\0", "config", "competitest.nvim")
+time([[Config for competitest.nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\nç\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\foptions\1\0\1\foptions\0\1\0\3\23section_separators\5\ntheme\tauto\25component_separators\5\nsetup\flualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads

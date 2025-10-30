@@ -1,64 +1,63 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-	use 'wbthomason/packer.nvim'   
-	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.8',
-		-- or                            , branch = '0.1.x',
-		requires = { {'nvim-lua/plenary.nvim'} }
-	}
+    use ('wbthomason/packer.nvim')
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.8',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
 
-	use({
-		"rose-pine/neovim",
-		as = "rose-pine",
-		config = function()
-			vim.cmd("colorscheme rose-pine")
-		end
-	})
+    use({
+        "rose-pine/neovim",
+        as = "rose-pine",
+        config = function()
+            vim.cmd("colorscheme rose-pine")
+        end
+    })
 
-	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
-	use('nvim-treesitter/playground')
-	use('theprimeagen/harpoon')
-	use('mbbill/undotree')
-	use({
-		'VonHeikemen/lsp-zero.nvim',
-		branch = 'v3.x',
-		requires = {
-			{'neovim/nvim-lspconfig'},
-			{'williamboman/mason.nvim'},
-			{'williamboman/mason-lspconfig.nvim'},
+    use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
+    use('nvim-treesitter/playground')
+    use('theprimeagen/harpoon')
+    use('mbbill/undotree')
 
-			{'hrsh7th/nvim-cmp'},
-			{'hrsh7th/cmp-nvim-lsp'},
-			{'hrsh7th/cmp-buffer'},
-			{'hrsh7th/cmp-path'},
-			{'hrsh7th/cmp-nvim-lua'},
+    use({
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v3.x',
+        requires = {
+            {'neovim/nvim-lspconfig'},
+            {'williamboman/mason.nvim'},
+            {'williamboman/mason-lspconfig.nvim'},
 
-			{'L3MON4D3/LuaSnip'},
-			{'saadparwaiz1/cmp_luasnip'},
-		}
-	})
+            {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-nvim-lsp'},
+            {'hrsh7th/cmp-buffer'},
+            {'hrsh7th/cmp-path'},
+            {'hrsh7th/cmp-nvim-lua'},
 
-	use({
-		"zbirenbaum/copilot.lua",
-		event = "InsertEnter",
-		config = function()
-			require("copilot").setup({
-				suggestion = {
-					enabled = true,
-					auto_trigger = true,
-					keymap = {
-						accept = "<C-l>",  						
-						next = "<M-]>",
-						prev = "<M-[>",
-						dismiss = "<C-]>",
-					},
-				},
-				panel = { enabled = true },
-			})
+            {'L3MON4D3/LuaSnip'},
+            {'saadparwaiz1/cmp_luasnip'},
+        }
+    })
 
-		end
-	})
+    use({
+        "zbirenbaum/copilot.lua",
+        event = "InsertEnter",
+        config = function()
+            require("copilot").setup({
+                suggestion = {
+                    enabled = true,
+                    auto_trigger = true,
+                    keymap = {
+                        accept = "<C-l>",  						
+                        next = "<M-]>",
+                        prev = "<M-[>",
+                        dismiss = "<C-]>",
+                    },
+                },
+                panel = { enabled = true },
+            })
+        end
+    })
 
     use({
         "andweeb/presence.nvim",
@@ -76,10 +75,8 @@ return require('packer').startup(function(use)
                 workspace_text      = "Working on %s",
                 line_number_text    = "Line %s out of %s",
             })
-
         end
     })
-
 
     use({
         'numToStr/Comment.nvim',
@@ -90,8 +87,7 @@ return require('packer').startup(function(use)
 
     use("ThePrimeagen/vim-be-good")
 
-
-    use {
+    use({
         'xeluxee/competitest.nvim',
         requires = { 'MunifTanjim/nui.nvim' },
         config = function()
@@ -107,7 +103,16 @@ return require('packer').startup(function(use)
                 }
             })
         end,
-    }
+    })
 
+    use({
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+        config = function()
+            require('lualine').setup({
+                options = { theme = 'auto', section_separators = '', component_separators = '' }
+            })
+        end
+    })
 
 end)
