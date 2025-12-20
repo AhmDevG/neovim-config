@@ -12,3 +12,19 @@ vim.keymap.set("n", "<leader>rp", ":CompetiTest receive problem<CR>", { noremap 
 vim.keymap.set("n", "<leader>rc", ":CompetiTest receive contest<CR>", { noremap = true, silent = true, desc = "Receive contest" })
 vim.keymap.set("n", "<leader>rs", ":CompetiTest show_ui<CR>", { noremap = true, silent = true, desc = "Show test UI" })
 vim.keymap.set('n', '<leader>w', ':bdelete<CR>', { silent = true })
+vim.api.nvim_set_keymap("i", "<C-k>", "<cmd>lua require'luasnip'.expand_or_jump()<CR>", {silent = true})
+
+
+vim.keymap.set("i", "<Tab>", function()
+  if vim.fn == 1 then
+    return "<Plug>(vsnip-expand-or-jump)"
+  end
+  return "<Tab>"
+end, { expr = true })
+
+vim.keymap.set("i", "<S-Tab>", function()
+  if vim.fn["vsnip#jumpable"](-1) == 1 then
+    return "<Plug>(vsnip-jump-prev)"
+  end
+  return "<S-Tab>"
+end, { expr = true })

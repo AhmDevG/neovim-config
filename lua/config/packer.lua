@@ -6,12 +6,26 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.8',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-
+    --
+    -- use({
+    --     "rose-pine/neovim",
+    --     as = "rose-pine",
+    --     config = function()
+    --         vim.cmd("colorscheme rose-pine")
+    --     end
+    -- })
+    --
+    --
     use({
-        "rose-pine/neovim",
-        as = "rose-pine",
+        "rebelot/kanagawa.nvim",
+        as = "kanagawa",
         config = function()
-            vim.cmd("colorscheme rose-pine")
+            require("kanagawa").setup({
+                commentStyle = { italic = true },
+                keywordStyle = { italic = false },
+                transparent = false,
+            })
+            vim.cmd("colorscheme kanagawa-dragon")
         end
     })
 
@@ -34,8 +48,12 @@ return require('packer').startup(function(use)
             {'hrsh7th/cmp-path'},
             {'hrsh7th/cmp-nvim-lua'},
 
-            {'L3MON4D3/LuaSnip'},
-            {'saadparwaiz1/cmp_luasnip'},
+            -- Snippets (vsnip ONLY)
+            "hrsh7th/vim-vsnip",
+            "hrsh7th/cmp-vsnip",
+
+            -- Snippets collection
+            "rafamadriz/friendly-snippets",
         }
     })
 
@@ -140,7 +158,6 @@ return require('packer').startup(function(use)
                     },
                 },
             }
-
             vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>', { silent = true })
             vim.keymap.set('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', { silent = true })
 
@@ -152,5 +169,12 @@ return require('packer').startup(function(use)
             vim.keymap.set('n', '<C-l>', ':BufferLineCycleNext<CR>', { silent = true })
         end
     }
+    use {
+        "rafamadriz/friendly-snippets",
+    }
+
+
+    use "tpope/vim-surround"
+
 
 end)
