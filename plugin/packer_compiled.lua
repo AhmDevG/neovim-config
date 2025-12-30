@@ -81,7 +81,7 @@ _G.packer_plugins = {
     url = "https://github.com/numToStr/Comment.nvim"
   },
   ["bufferline.nvim"] = {
-    config = { "\27LJ\2\n”\5\0\0\v\0\27\0@6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0004\4\3\0005\5\4\0>\5\1\4=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\f\0'\4\r\0005\5\14\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\15\0'\4\16\0005\5\17\0B\0\5\1)\0\1\0)\1\t\0)\2\1\0M\0\15Ä6\4\b\0009\4\t\0049\4\n\4'\6\v\0'\a\18\0\18\b\3\0'\t\19\0&\a\t\a'\b\20\0\18\t\3\0'\n\21\0&\b\n\b5\t\22\0B\4\5\1O\0Ò\1276\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\23\0'\4\16\0005\5\24\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\25\0'\4\r\0005\5\26\0B\0\5\1K\0\1\0\1\0\1\vsilent\2\n<C-l>\1\0\1\vsilent\2\n<C-h>\1\0\1\vsilent\2\t<CR>\31<Cmd>BufferLineGoToBuffer \6>\b<A-\1\0\1\vsilent\2\29:BufferLineCyclePrev<CR>\f<S-Tab>\1\0\1\vsilent\2\29:BufferLineCycleNext<CR>\n<Tab>\6n\bset\vkeymap\bvim\foptions\1\0\1\foptions\0\foffsets\1\0\4\14highlight\14Directory\14separator\2\rfiletype\rNvimTree\ttext\18File Explorer\1\0\b\20separator_style\nslant\20show_close_icon\1\tmode\fbuffers\fnumbers\fordinal\28show_buffer_close_icons\2\foffsets\0\16diagnostics\rnvim_lsp\27always_show_bufferline\2\nsetup\15bufferline\frequire\0" },
+    config = { "\27LJ\2\n”\5\0\0\v\0\27\0@6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0004\4\3\0005\5\4\0>\5\1\4=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\f\0'\4\r\0005\5\14\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\15\0'\4\16\0005\5\17\0B\0\5\1)\0\1\0)\1\t\0)\2\1\0M\0\15Ä6\4\b\0009\4\t\0049\4\n\4'\6\v\0'\a\18\0\18\b\3\0'\t\19\0&\a\t\a'\b\20\0\18\t\3\0'\n\21\0&\b\n\b5\t\22\0B\4\5\1O\0Ò\1276\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\23\0'\4\16\0005\5\24\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\25\0'\4\r\0005\5\26\0B\0\5\1K\0\1\0\1\0\1\vsilent\2\n<C-l>\1\0\1\vsilent\2\n<C-h>\1\0\1\vsilent\2\t<CR>\31<Cmd>BufferLineGoToBuffer \6>\b<A-\1\0\1\vsilent\2\29:BufferLineCyclePrev<CR>\f<S-Tab>\1\0\1\vsilent\2\29:BufferLineCycleNext<CR>\n<Tab>\6n\bset\vkeymap\bvim\foptions\1\0\1\foptions\0\foffsets\1\0\4\ttext\18File Explorer\14separator\2\rfiletype\rNvimTree\14highlight\14Directory\1\0\b\tmode\fbuffers\20show_close_icon\1\fnumbers\fordinal\28show_buffer_close_icons\2\27always_show_bufferline\2\16diagnostics\rnvim_lsp\foffsets\0\20separator_style\nslant\nsetup\15bufferline\frequire\0" },
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
@@ -112,13 +112,13 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["competitest.nvim"] = {
-    config = { "\27LJ\2\n≥\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\14editor_ui\1\0\4\17popup_height\4≥ÊÃô\3≥Êåˇ\3\fshow_nu\2\rshow_rnu\1\16popup_width\4ö≥ÊÃ\tô≥Ê˛\3\1\0\4*start_receiving_persistently_on_setup\2\14editor_ui\0\27receiver_problems_path@D:/Problems/Contests/$(JUDGE)/$(CONTEST)/$(PROBLEM).$(FEXT)\26receive_print_message\2\nsetup\16competitest\frequire\0" },
+    config = { "\27LJ\2\n≤\1\0\1\b\0\n\0\0206\1\0\0009\1\1\1'\3\2\0009\4\3\0B\1\3\0026\2\4\0009\2\5\2'\4\6\0\18\5\1\0'\6\a\0&\4\6\4B\2\2\0016\2\0\0009\2\1\2'\4\b\0\18\5\1\0009\6\3\0009\a\t\0B\2\5\2L\2\2\0\tFEXT\r%s/%s.%s\6\"\fmkdir \"\fexecute\aos\fPROBLEM&D:/Problems/mostafa_saad_sheet/%s\vformat\vstring‘\2\0\1\b\0\n\0\0236\1\0\0009\1\1\1'\3\2\0009\4\3\0&\3\4\3B\1\2\0019\1\4\0\a\1\5\0X\1\tÄ6\1\0\0009\1\6\0019\1\a\1)\3\0\0)\4\0\0)\5ˇˇ+\6\1\0005\a\b\0B\1\6\0016\1\0\0009\1\1\1'\3\t\0B\1\2\1K\0\1\0002call vsnip#expandable() ? vsnip#expand() : ''\1\n\0\0\29#include <bits/stdc++.h>\25using namespace std;\5\17int main() {%    ios::sync_with_stdio(false);\26    cin.tie(nullptr);\t    \18    return 0;\6}\23nvim_buf_set_lines\bapi\bcpp\tFEXT\rfilepath\nedit \bcmd\bvim∏\2\1\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\4\0003\4\3\0=\4\5\0035\4\6\0=\4\a\0033\4\b\0=\4\t\3B\1\2\1K\0\1\0\15on_receive\0\14editor_ui\1\0\4\17popup_height\4≥ÊÃô\3≥Êåˇ\3\fshow_nu\2\rshow_rnu\1\16popup_width\4ö≥ÊÃ\tô≥Ê˛\3\27receiver_problems_path\1\0\5*start_receiving_persistently_on_setup\2\27receiver_problems_path\0\15on_receive\0\14editor_ui\0\26receive_print_message\2\0\nsetup\16competitest\frequire\0" },
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\competitest.nvim",
     url = "https://github.com/xeluxee/competitest.nvim"
   },
   ["copilot.lua"] = {
-    config = { "\27LJ\2\n·\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\npanel\1\0\1\fenabled\2\15suggestion\1\0\2\npanel\0\15suggestion\0\vkeymap\1\0\4\tnext\n<M-]>\fdismiss\n<C-]>\vaccept\n<C-l>\tprev\n<M-[>\1\0\3\vkeymap\0\fenabled\2\17auto_trigger\2\nsetup\fcopilot\frequire\0" },
+    config = { "\27LJ\2\n·\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\npanel\1\0\1\fenabled\2\15suggestion\1\0\2\15suggestion\0\npanel\0\vkeymap\1\0\4\tprev\n<M-[>\fdismiss\n<C-]>\vaccept\n<C-l>\tnext\n<M-]>\1\0\3\fenabled\2\17auto_trigger\2\vkeymap\0\nsetup\fcopilot\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -134,12 +134,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
     url = "https://github.com/theprimeagen/harpoon"
-  },
-  kanagawa = {
-    config = { "\27LJ\2\n⁄\1\0\0\4\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0 colorscheme kanagawa-dragon\bcmd\bvim\17keywordStyle\1\0\1\vitalic\1\17commentStyle\1\0\3\17keywordStyle\0\16transparent\1\17commentStyle\0\1\0\1\vitalic\2\nsetup\rkanagawa\frequire\0" },
-    loaded = true,
-    path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\kanagawa",
-    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -188,6 +182,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  onedark = {
+    config = { "\27LJ\2\no\0\0\3\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\tload\1\0\2\nstyle\vwarmer\16transparent\2\nsetup\fonedark\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark",
+    url = "https://github.com/navarasu/onedark.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -204,7 +204,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["presence.nvim"] = {
-    config = { "\27LJ\2\nÍ\2\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\v\17reading_text\15Reading %s\19workspace_text\18Working on %s\17editing_text\15Editing %s\21line_number_text\22Line %s out of %s\22neovim_image_text\15Neovim IDE\23enable_line_number\2\21debounce_timeout\3\n\15main_image\vneovim\20git_commit_text\23Committing changes\23file_explorer_text\16Browsing %s\24plugin_manager_text\21Managing plugins\nsetup\rpresence\frequire\0" },
+    config = { "\27LJ\2\nÍ\2\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\v\20git_commit_text\23Committing changes\23file_explorer_text\16Browsing %s\17reading_text\15Reading %s\24plugin_manager_text\21Managing plugins\17editing_text\15Editing %s\21line_number_text\22Line %s out of %s\19workspace_text\18Working on %s\22neovim_image_text\15Neovim IDE\15main_image\vneovim\23enable_line_number\2\21debounce_timeout\3\n\nsetup\rpresence\frequire\0" },
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\presence.nvim",
     url = "https://github.com/andweeb/presence.nvim"
@@ -237,30 +237,30 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: presence.nvim
-time([[Config for presence.nvim]], true)
-try_loadstring("\27LJ\2\nÍ\2\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\v\17reading_text\15Reading %s\19workspace_text\18Working on %s\17editing_text\15Editing %s\21line_number_text\22Line %s out of %s\22neovim_image_text\15Neovim IDE\23enable_line_number\2\21debounce_timeout\3\n\15main_image\vneovim\20git_commit_text\23Committing changes\23file_explorer_text\16Browsing %s\24plugin_manager_text\21Managing plugins\nsetup\rpresence\frequire\0", "config", "presence.nvim")
-time([[Config for presence.nvim]], false)
+-- Config for: onedark
+time([[Config for onedark]], true)
+try_loadstring("\27LJ\2\no\0\0\3\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\tload\1\0\2\nstyle\vwarmer\16transparent\2\nsetup\fonedark\frequire\0", "config", "onedark")
+time([[Config for onedark]], false)
 -- Config for: bufferline.nvim
 time([[Config for bufferline.nvim]], true)
-try_loadstring("\27LJ\2\n”\5\0\0\v\0\27\0@6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0004\4\3\0005\5\4\0>\5\1\4=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\f\0'\4\r\0005\5\14\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\15\0'\4\16\0005\5\17\0B\0\5\1)\0\1\0)\1\t\0)\2\1\0M\0\15Ä6\4\b\0009\4\t\0049\4\n\4'\6\v\0'\a\18\0\18\b\3\0'\t\19\0&\a\t\a'\b\20\0\18\t\3\0'\n\21\0&\b\n\b5\t\22\0B\4\5\1O\0Ò\1276\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\23\0'\4\16\0005\5\24\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\25\0'\4\r\0005\5\26\0B\0\5\1K\0\1\0\1\0\1\vsilent\2\n<C-l>\1\0\1\vsilent\2\n<C-h>\1\0\1\vsilent\2\t<CR>\31<Cmd>BufferLineGoToBuffer \6>\b<A-\1\0\1\vsilent\2\29:BufferLineCyclePrev<CR>\f<S-Tab>\1\0\1\vsilent\2\29:BufferLineCycleNext<CR>\n<Tab>\6n\bset\vkeymap\bvim\foptions\1\0\1\foptions\0\foffsets\1\0\4\14highlight\14Directory\14separator\2\rfiletype\rNvimTree\ttext\18File Explorer\1\0\b\20separator_style\nslant\20show_close_icon\1\tmode\fbuffers\fnumbers\fordinal\28show_buffer_close_icons\2\foffsets\0\16diagnostics\rnvim_lsp\27always_show_bufferline\2\nsetup\15bufferline\frequire\0", "config", "bufferline.nvim")
+try_loadstring("\27LJ\2\n”\5\0\0\v\0\27\0@6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0004\4\3\0005\5\4\0>\5\1\4=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\f\0'\4\r\0005\5\14\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\15\0'\4\16\0005\5\17\0B\0\5\1)\0\1\0)\1\t\0)\2\1\0M\0\15Ä6\4\b\0009\4\t\0049\4\n\4'\6\v\0'\a\18\0\18\b\3\0'\t\19\0&\a\t\a'\b\20\0\18\t\3\0'\n\21\0&\b\n\b5\t\22\0B\4\5\1O\0Ò\1276\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\23\0'\4\16\0005\5\24\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\25\0'\4\r\0005\5\26\0B\0\5\1K\0\1\0\1\0\1\vsilent\2\n<C-l>\1\0\1\vsilent\2\n<C-h>\1\0\1\vsilent\2\t<CR>\31<Cmd>BufferLineGoToBuffer \6>\b<A-\1\0\1\vsilent\2\29:BufferLineCyclePrev<CR>\f<S-Tab>\1\0\1\vsilent\2\29:BufferLineCycleNext<CR>\n<Tab>\6n\bset\vkeymap\bvim\foptions\1\0\1\foptions\0\foffsets\1\0\4\ttext\18File Explorer\14separator\2\rfiletype\rNvimTree\14highlight\14Directory\1\0\b\tmode\fbuffers\20show_close_icon\1\fnumbers\fordinal\28show_buffer_close_icons\2\27always_show_bufferline\2\16diagnostics\rnvim_lsp\foffsets\0\20separator_style\nslant\nsetup\15bufferline\frequire\0", "config", "bufferline.nvim")
 time([[Config for bufferline.nvim]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
+-- Config for: presence.nvim
+time([[Config for presence.nvim]], true)
+try_loadstring("\27LJ\2\nÍ\2\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\v\20git_commit_text\23Committing changes\23file_explorer_text\16Browsing %s\17reading_text\15Reading %s\24plugin_manager_text\21Managing plugins\17editing_text\15Editing %s\21line_number_text\22Line %s out of %s\19workspace_text\18Working on %s\22neovim_image_text\15Neovim IDE\15main_image\vneovim\23enable_line_number\2\21debounce_timeout\3\n\nsetup\rpresence\frequire\0", "config", "presence.nvim")
+time([[Config for presence.nvim]], false)
 -- Config for: lualine.nvim
 time([[Config for lualine.nvim]], true)
 try_loadstring("\27LJ\2\nç\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\foptions\1\0\1\foptions\0\1\0\3\ntheme\tauto\25component_separators\5\23section_separators\5\nsetup\flualine\frequire\0", "config", "lualine.nvim")
 time([[Config for lualine.nvim]], false)
--- Config for: kanagawa
-time([[Config for kanagawa]], true)
-try_loadstring("\27LJ\2\n⁄\1\0\0\4\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0 colorscheme kanagawa-dragon\bcmd\bvim\17keywordStyle\1\0\1\vitalic\1\17commentStyle\1\0\3\17keywordStyle\0\16transparent\1\17commentStyle\0\1\0\1\vitalic\2\nsetup\rkanagawa\frequire\0", "config", "kanagawa")
-time([[Config for kanagawa]], false)
 -- Config for: competitest.nvim
 time([[Config for competitest.nvim]], true)
-try_loadstring("\27LJ\2\n≥\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\14editor_ui\1\0\4\17popup_height\4≥ÊÃô\3≥Êåˇ\3\fshow_nu\2\rshow_rnu\1\16popup_width\4ö≥ÊÃ\tô≥Ê˛\3\1\0\4*start_receiving_persistently_on_setup\2\14editor_ui\0\27receiver_problems_path@D:/Problems/Contests/$(JUDGE)/$(CONTEST)/$(PROBLEM).$(FEXT)\26receive_print_message\2\nsetup\16competitest\frequire\0", "config", "competitest.nvim")
+try_loadstring("\27LJ\2\n≤\1\0\1\b\0\n\0\0206\1\0\0009\1\1\1'\3\2\0009\4\3\0B\1\3\0026\2\4\0009\2\5\2'\4\6\0\18\5\1\0'\6\a\0&\4\6\4B\2\2\0016\2\0\0009\2\1\2'\4\b\0\18\5\1\0009\6\3\0009\a\t\0B\2\5\2L\2\2\0\tFEXT\r%s/%s.%s\6\"\fmkdir \"\fexecute\aos\fPROBLEM&D:/Problems/mostafa_saad_sheet/%s\vformat\vstring‘\2\0\1\b\0\n\0\0236\1\0\0009\1\1\1'\3\2\0009\4\3\0&\3\4\3B\1\2\0019\1\4\0\a\1\5\0X\1\tÄ6\1\0\0009\1\6\0019\1\a\1)\3\0\0)\4\0\0)\5ˇˇ+\6\1\0005\a\b\0B\1\6\0016\1\0\0009\1\1\1'\3\t\0B\1\2\1K\0\1\0002call vsnip#expandable() ? vsnip#expand() : ''\1\n\0\0\29#include <bits/stdc++.h>\25using namespace std;\5\17int main() {%    ios::sync_with_stdio(false);\26    cin.tie(nullptr);\t    \18    return 0;\6}\23nvim_buf_set_lines\bapi\bcpp\tFEXT\rfilepath\nedit \bcmd\bvim∏\2\1\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\4\0003\4\3\0=\4\5\0035\4\6\0=\4\a\0033\4\b\0=\4\t\3B\1\2\1K\0\1\0\15on_receive\0\14editor_ui\1\0\4\17popup_height\4≥ÊÃô\3≥Êåˇ\3\fshow_nu\2\rshow_rnu\1\16popup_width\4ö≥ÊÃ\tô≥Ê˛\3\27receiver_problems_path\1\0\5*start_receiving_persistently_on_setup\2\27receiver_problems_path\0\15on_receive\0\14editor_ui\0\26receive_print_message\2\0\nsetup\16competitest\frequire\0", "config", "competitest.nvim")
 time([[Config for competitest.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads

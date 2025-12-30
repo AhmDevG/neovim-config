@@ -16,18 +16,30 @@ return require('packer').startup(function(use)
     -- })
     --
     --
+    -- use({
+    --     "rebelot/kanagawa.nvim",
+    --     as = "kanagawa",
+    --     config = function()
+    --         require("kanagawa").setup({
+    --             commentStyle = { italic = true },
+    --             keywordStyle = { italic = false },
+    --             transparent = false,
+    --         })
+    --         vim.cmd("colorscheme kanagawa-dragon")
+    --     end
+    -- })
     use({
-        "rebelot/kanagawa.nvim",
-        as = "kanagawa",
-        config = function()
-            require("kanagawa").setup({
-                commentStyle = { italic = true },
-                keywordStyle = { italic = false },
-                transparent = false,
+        'navarasu/onedark.nvim',
+        as = 'onedark',
+        config = function ()
+            require('onedark').setup({
+                style = 'warmer',
+                transparent = false 
             })
-            vim.cmd("colorscheme kanagawa-dragon")
+            require('onedark').load()
         end
     })
+
 
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
     use('nvim-treesitter/playground')
@@ -109,19 +121,52 @@ return require('packer').startup(function(use)
         'xeluxee/competitest.nvim',
         requires = { 'MunifTanjim/nui.nvim' },
         config = function()
-            require('competitest').setup({
-                receiver_problems_path =  "D:/Problems/Contests/$(JUDGE)/$(CONTEST)/$(PROBLEM).$(FEXT)",
+            local competi = require('competitest')
+
+            competi.setup({
+                receiver_problems_path = function(info)
+                    local folder_path = string.format("D:/Problems/mostafa_saad_sheet/%s", info.PROBLEM)
+                    os.execute('mkdir "' .. folder_path .. '"')
+
+                    local file_path = string.format("%s/%s.%s", folder_path, info.PROBLEM, info.FEXT)
+                    return file_path
+                end,
+
                 start_receiving_persistently_on_setup = true,
                 receive_print_message = true,
+
                 editor_ui = {
                     popup_width = 0.4,
                     popup_height = 0.6,
                     show_nu = true,
                     show_rnu = false,
-                }
+                },
+
+                on_receive = function(info)
+                    vim.cmd("edit " .. info.filepath)
+
+                    if info.FEXT == "cpp" then
+                        vim.api.nvim_buf_set_lines(0, 0, -1, false, {
+                            "#include <bits/stdc++.h>",
+                            "using namespace std;",
+                            "",
+                            "int main() {",
+                            "    ios::sync_with_stdio(false);",
+                            "    cin.tie(nullptr);",
+                            "    ",
+                            "    return 0;",
+                            "}"
+                        })
+                    end
+
+                    vim.cmd("call vsnip#expandable() ? vsnip#expand() : ''")
+                end
+
+
             })
         end,
     })
+
 
     use({
         'nvim-lualine/lualine.nvim',
