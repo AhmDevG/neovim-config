@@ -28,3 +28,21 @@ vim.keymap.set("i", "<S-Tab>", function()
   end
   return "<S-Tab>"
 end, { expr = true })
+
+vim.keymap.set("n", "p", function()
+    local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+    vim.cmd("normal! p")
+    vim.api.nvim_win_set_cursor(0, { row+1, col })
+end, { noremap = true, silent = true })
+
+vim.keymap.set("n", "P", function()
+    local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+    vim.cmd("normal! P")
+    vim.api.nvim_win_set_cursor(0, { row+1, col })
+end, { noremap = true, silent = true })
+
+vim.keymap.set("v", "y", function()
+    local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+    vim.cmd("normal! y")
+    vim.api.nvim_win_set_cursor(0, { row, col })
+end, { noremap = true, silent = true })
