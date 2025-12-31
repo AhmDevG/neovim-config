@@ -1,15 +1,47 @@
 {
-  "main": {
+  "cp": {
     "prefix": "cp",
     "body": [
       "#include <bits/stdc++.h>",
       "using namespace std;",
       "",
+      "typedef long long ll;",
+      "typedef vector<int> vi;",
+      "",
       "int main() {",
-      "    ios_base::sync_with_stdio(false);cin.tie(nullptr);",
+      "    ios_base::sync_with_stdio(false);",
+      "    cin.tie(nullptr);",
       "    $0",
       "    return 0;",
       "}"
-    ]
+    ],
+    "description": "Competitive programming template"
+  },
+  "fori": {
+    "prefix": "fori",
+    "body": [
+      "for (int i = 0; i < n; i++) {",
+      "    $0",
+      "}"
+    ],
+    "description": "For-loop snippet"
+  },
+  "vin": {
+    "prefix": "vin",
+    "body": [
+      "vector<int> a(n);",
+      "for (int i = 0; i < n; i++) cin >> a[i];"
+    ],
+    "description": "Vector input snippet"
+  },
+  "tc": {
+    "prefix": "tc",
+    "body": [
+      "int t; cin >> t;",
+      "while (t--) {",
+      "    $0",
+      "}"
+    ],
+    "description": "Testcases loop snippet"
   }
 }
