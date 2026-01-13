@@ -14,8 +14,21 @@ vim.keymap.set("n", "<leader>rs", ":CompetiTest show_ui<CR>", { noremap = true, 
 vim.keymap.set('n', '<leader>w', ':bdelete<CR>', { silent = true })
 vim.api.nvim_set_keymap("i", "<C-k>", "<cmd>lua require'luasnip'.expand_or_jump()<CR>", {silent = true})
 vim.keymap.set('n', '<leader>de', require('telescope.builtin').diagnostics)
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>vpp", "<cmd>e  C:/Users/Ahmed-PC/AppData/Local/nvim/lua/config/packer.lua<CR>");
+vim.keymap.set("n", "<leader><leader>", function()
+    vim.cmd("so")
+end)
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("x", "<leader>p", [["_dP]])
 
 vim.keymap.set("i", "<Tab>", function()
+
   if vim.fn == 1 then
     return "<Plug>(vsnip-expand-or-jump)"
   end
@@ -46,4 +59,3 @@ vim.keymap.set("v", "y", function()
     vim.cmd("normal! y")
     vim.api.nvim_win_set_cursor(0, { row, col })
 end, { noremap = true, silent = true })
-
