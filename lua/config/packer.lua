@@ -28,19 +28,19 @@ return require('packer').startup(function(use)
     --         vim.cmd("colorscheme kanagawa-dragon")
     --     end
     -- })
-    use({
-        'navarasu/onedark.nvim',
-        as = 'onedark',
-        config = function ()
-            require('onedark').setup({
-                style = 'warmer',
-                transparent = false 
-            })
-            require('onedark').load()
-        end
-    })
-
-
+    -- use({
+    --     'navarasu/onedark.nvim',
+    --     as = 'onedark',
+    --     config = function ()
+    --         require('onedark').setup({
+    --             style = 'warmer',
+    --             transparent = false 
+    --         })
+    --         require('onedark').load()
+    --     end
+    -- })
+    --
+    --
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
     use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
@@ -231,5 +231,12 @@ return require('packer').startup(function(use)
     use {
         "mg979/vim-visual-multi"
     }
+
+    use {
+        "bluz71/vim-moonfly-colors",
+        as = 'moonfly',
+
+    }
+
 
 end)

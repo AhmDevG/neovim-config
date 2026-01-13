@@ -13,7 +13,7 @@ vim.keymap.set("n", "<leader>rc", ":CompetiTest receive contest<CR>", { noremap 
 vim.keymap.set("n", "<leader>rs", ":CompetiTest show_ui<CR>", { noremap = true, silent = true, desc = "Show test UI" })
 vim.keymap.set('n', '<leader>w', ':bdelete<CR>', { silent = true })
 vim.api.nvim_set_keymap("i", "<C-k>", "<cmd>lua require'luasnip'.expand_or_jump()<CR>", {silent = true})
-
+vim.keymap.set('n', '<leader>de', require('telescope.builtin').diagnostics)
 
 vim.keymap.set("i", "<Tab>", function()
   if vim.fn == 1 then
@@ -46,3 +46,4 @@ vim.keymap.set("v", "y", function()
     vim.cmd("normal! y")
     vim.api.nvim_win_set_cursor(0, { row, col })
 end, { noremap = true, silent = true })
+
