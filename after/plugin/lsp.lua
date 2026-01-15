@@ -81,4 +81,13 @@ lsp.on_attach(function(client, bufnr)
   end, opts)
 end)
 
+require("lspconfig").pyright.setup({
+  settings = {
+    python = {
+      pythonPath =
+        "C:/Users/Ahmed-PC/AppData/Local/Programs/Python/Python312/python.exe",
+    },
+  },
+})
+
 lsp.setup()

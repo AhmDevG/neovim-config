@@ -6,14 +6,17 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.8',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    --
-    -- use({
-    --     "rose-pine/neovim",
-    --     as = "rose-pine",
-    --     config = function()
-    --         vim.cmd("colorscheme rose-pine")
-    --     end
-    -- })
+
+    use({
+        "rose-pine/neovim",
+        as = "rose-pine",
+        config = function()
+            vim.cmd("colorscheme rose-pine")
+            require("rose-pine").setup({
+                transparent = false
+            })
+        end
+    })
     --
     --
     -- use({
@@ -232,10 +235,10 @@ return require('packer').startup(function(use)
         "mg979/vim-visual-multi"
     }
 
-    use {
-        "bluz71/vim-moonfly-colors",
-        as = 'moonfly',
-
-    }
+    -- use {
+    --     "bluz71/vim-moonfly-colors",
+    --     as = 'moonfly',
+    --
+    -- }
 
 end)
