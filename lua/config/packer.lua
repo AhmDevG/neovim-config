@@ -255,5 +255,13 @@ return require('packer').startup(function(use)
         end
     }
 
+    use {
+        "nvzone/floaterm",
+        requires = { "nvzone/volt" },
+        config = function()
+            require("floaterm").setup({})
+        end,
+        cmd = { "FloatermToggle" },
+    }
 
 end)

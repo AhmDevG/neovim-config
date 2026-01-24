@@ -59,3 +59,5 @@ vim.keymap.set("v", "y", function()
     vim.cmd("normal! y")
     vim.api.nvim_win_set_cursor(0, { row, col })
 end, { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>tt", "<cmd>FloatermToggle<CR>", { desc = "Toggle Terminal" })
