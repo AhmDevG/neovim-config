@@ -6,17 +6,17 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.8',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-
-    use({
-        "rose-pine/neovim",
-        as = "rose-pine",
-        config = function()
-            vim.cmd("colorscheme rose-pine")
-            require("rose-pine").setup({
-                transparent = false
-            })
-        end
-    })
+    --
+    -- use({
+    --     "rose-pine/neovim",
+    --     as = "rose-pine",
+    --     config = function()
+    --         vim.cmd("colorscheme rose-pine")
+    --         require("rose-pine").setup({
+    --             transparent = false
+    --         })
+    --     end
+    -- })
     --
     --
     -- use({
@@ -239,13 +239,21 @@ return require('packer').startup(function(use)
         "sphamba/smear-cursor.nvim",
         config = function()
             require("smear_cursor").setup({
-                smear_between_buffers = true,
-                smear_between_neighbor_lines = true,
-                scroll_buffer_space = true,
-                legacy_computing_symbols_support = false,
-                smear_insert_mode = true,
+                stiffness = 0.5,
+                trailing_stiffness = 0.5,
+                matrix_pixel_threshold = 0.5
             })
         end
     }
+
+    use{
+        'cranberry-clockworks/coal.nvim',
+        config = function()
+            require("coal").setup({
+                transparent = false
+            })
+        end
+    }
+
 
 end)

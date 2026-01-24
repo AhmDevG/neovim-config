@@ -12,7 +12,7 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+-- vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
@@ -28,3 +28,10 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 vim.g.vsnip_snippet_dir = vim.fn.stdpath("config") .. "/snippets"
+
+vim.cmd("set lazyredraw")
+vim.cmd("set updatetime=1000")
+vim.cmd("set timeoutlen=500")
+vim.cmd("set ttimeoutlen=10")
+vim.opt.redrawtime = 1500
+vim.opt.synmaxcol = 200
