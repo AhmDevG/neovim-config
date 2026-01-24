@@ -235,10 +235,17 @@ return require('packer').startup(function(use)
         "mg979/vim-visual-multi"
     }
 
-    -- use {
-    --     "bluz71/vim-moonfly-colors",
-    --     as = 'moonfly',
-    --
-    -- }
+    use {
+        "sphamba/smear-cursor.nvim",
+        config = function()
+            require("smear_cursor").setup({
+                smear_between_buffers = true,
+                smear_between_neighbor_lines = true,
+                scroll_buffer_space = true,
+                legacy_computing_symbols_support = false,
+                smear_insert_mode = true,
+            })
+        end
+    }
 
 end)
