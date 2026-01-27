@@ -1,3 +1,5 @@
+---@diagnostic disable: undefined-global
+
 vim.g.mapleader = " "
 
 
@@ -26,6 +28,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("x", "<leader>p", [["_dP]])
+
 
 vim.keymap.set("i", "<Tab>", function()
 

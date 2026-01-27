@@ -234,18 +234,18 @@ return require('packer').startup(function(use)
     use {
         "mg979/vim-visual-multi"
     }
-
-    use {
-        "sphamba/smear-cursor.nvim",
-        config = function()
-            require("smear_cursor").setup({
-                stiffness = 0.5,
-                trailing_stiffness = 0.5,
-                matrix_pixel_threshold = 0.5
-            })
-        end
-    }
-
+    --
+    -- use {
+    --     "sphamba/smear-cursor.nvim",
+    --     config = function()
+    --         require("smear_cursor").setup({
+    --             stiffness = 0.5,
+    --             trailing_stiffness = 0.5,
+    --             matrix_pixel_threshold = 0.5
+    --         })
+    --     end
+    -- }
+    --
     use{
         'cranberry-clockworks/coal.nvim',
         config = function()
@@ -262,6 +262,19 @@ return require('packer').startup(function(use)
             require("floaterm").setup({})
         end,
         cmd = { "FloatermToggle" },
+    }
+
+    use {
+	    "norcalli/nvim-colorizer.lua",
+	    config = function()
+		require("colorizer").setup()
+	    end
+    }
+
+    use {
+        'tommcdo/vim-exchange',
+        config = function()
+        end
     }
 
 end)
