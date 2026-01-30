@@ -1,22 +1,21 @@
+-- @diagnostic disable: undefined-global 
+
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     use ('wbthomason/packer.nvim')
-    use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.8',
-        requires = { {'nvim-lua/plenary.nvim'} }
-    }
-    --
-    -- use({
-    --     "rose-pine/neovim",
-    --     as = "rose-pine",
-    --     config = function()
-    --         vim.cmd("colorscheme rose-pine")
-    --         require("rose-pine").setup({
-    --             transparent = false
-    --         })
-    --     end
-    -- })
+    use { 'nvim-telescope/telescope.nvim', tag = '0.1.8', requires = { {'nvim-lua/plenary.nvim'} }, } 
+    use({
+        "rose-pine/neovim",
+        as = "rose-pine",
+        -- cmd = 'colorscheme rose-pine',
+        config = function()
+            require("rose-pine").setup({
+                vim.cmd("colorscheme rose-pine"),
+                transparent = false
+            })
+        end,
+    })
     --
     --
     -- use({
@@ -45,7 +44,7 @@ return require('packer').startup(function(use)
     --
     --
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
-    use('nvim-treesitter/playground')
+    -- use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
 
@@ -92,24 +91,24 @@ return require('packer').startup(function(use)
         end
     })
 
-    use({
-        "andweeb/presence.nvim",
-        config = function()
-            require("presence").setup({
-                neovim_image_text   = "Neovim IDE",
-                main_image          = "neovim",    
-                debounce_timeout    = 10,
-                enable_line_number  = true,
-                editing_text        = "Editing %s",
-                file_explorer_text  = "Browsing %s",
-                git_commit_text     = "Committing changes",
-                plugin_manager_text = "Managing plugins",
-                reading_text        = "Reading %s",
-                workspace_text      = "Working on %s",
-                line_number_text    = "Line %s out of %s",
-            })
-        end
-    })
+    --use({
+    --    "andweeb/presence.nvim",
+    --    config = function()
+    --        require("presence").setup({
+    --            neovim_image_text   = "Neovim IDE",
+    --            main_image          = "neovim",    
+    --            debounce_timeout    = 10,
+    --            enable_line_number  = true,
+    --            editing_text        = "Editing %s",
+    --            file_explorer_text  = "Browsing %s",
+    --            git_commit_text     = "Committing changes",
+    --            plugin_manager_text = "Managing plugins",
+    --            reading_text        = "Reading %s",
+    --            workspace_text      = "Working on %s",
+    --            line_number_text    = "Line %s out of %s",
+    --        })
+    --    end
+    --})
 
     use({
         'numToStr/Comment.nvim',
@@ -123,6 +122,7 @@ return require('packer').startup(function(use)
     use({
         'xeluxee/competitest.nvim',
         requires = { 'MunifTanjim/nui.nvim' },
+        ft = {'cpp'},
         config = function()
             local competi = require('competitest')
 
@@ -171,52 +171,17 @@ return require('packer').startup(function(use)
     })
 
 
-    use({
-        'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true },
-        config = function()
-            require('lualine').setup({
-                options = { theme = 'auto', section_separators = '', component_separators = '' }
-            })
-        end,
-    })
+    -- use({
+    --     'nvim-lualine/lualine.nvim',
+    --     requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+    --     config = function()
+    --         require('lualine').setup({
+    --             options = { theme = 'auto', section_separators = '', component_separators = '' }
+    --         })
+    --     end,
+    -- })
+    --
 
-
-    use {
-        'akinsho/bufferline.nvim',
-        tag = "*",
-        requires = 'nvim-tree/nvim-web-devicons',
-        config = function()
-            require("bufferline").setup {
-                options = {
-                    mode = "buffers", 
-                    numbers = "ordinal",
-                    diagnostics = "nvim_lsp",
-                    separator_style = "slant",
-                    show_buffer_close_icons = true,
-                    show_close_icon = false,
-                    always_show_bufferline = true,
-                    offsets = {
-                        {
-                            filetype = "NvimTree",
-                            text = "File Explorer",
-                            highlight = "Directory",
-                            separator = true
-                        }
-                    },
-                },
-            }
-            vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>', { silent = true })
-            vim.keymap.set('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', { silent = true })
-
-            for i = 1, 9 do
-                vim.keymap.set('n', '<A-' .. i .. '>', '<Cmd>BufferLineGoToBuffer ' .. i .. '<CR>', { silent = true })
-            end
-
-            vim.keymap.set('n', '<C-h>', ':BufferLineCyclePrev<CR>', { silent = true })
-            vim.keymap.set('n', '<C-l>', ':BufferLineCycleNext<CR>', { silent = true })
-        end
-    }
     use {
         "rafamadriz/friendly-snippets",
     }
@@ -246,23 +211,15 @@ return require('packer').startup(function(use)
     --     end
     -- }
     --
-    use{
-        'cranberry-clockworks/coal.nvim',
-        config = function()
-            require("coal").setup({
-                transparent = false
-            })
-        end
-    }
-
-    use {
-        "nvzone/floaterm",
-        requires = { "nvzone/volt" },
-        config = function()
-            require("floaterm").setup({})
-        end,
-        cmd = { "FloatermToggle" },
-    }
+    --
+    -- use {
+    --     "nvzone/floaterm",
+    --     requires = { "nvzone/volt" },
+    --     config = function()
+    --         require("floaterm").setup({})
+    --     end,
+    --     cmd = { "FloatermToggle" },
+    -- }
 
     use {
 	    "norcalli/nvim-colorizer.lua",
