@@ -106,7 +106,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["competitest.nvim"] = {
-    config = { "\27LJ\2\n²\1\0\1\b\0\n\0\0206\1\0\0009\1\1\1'\3\2\0009\4\3\0B\1\3\0026\2\4\0009\2\5\2'\4\6\0\18\5\1\0'\6\a\0&\4\6\4B\2\2\0016\2\0\0009\2\1\2'\4\b\0\18\5\1\0009\6\3\0009\a\t\0B\2\5\2L\2\2\0\tFEXT\r%s/%s.%s\6\"\fmkdir \"\fexecute\aos\fPROBLEM&D:/Problems/mostafa_saad_sheet/%s\vformat\vstringÔ\2\0\1\b\0\n\0\0236\1\0\0009\1\1\1'\3\2\0009\4\3\0&\3\4\3B\1\2\0019\1\4\0\a\1\5\0X\1\t€6\1\0\0009\1\6\0019\1\a\1)\3\0\0)\4\0\0)\5ÿÿ+\6\1\0005\a\b\0B\1\6\0016\1\0\0009\1\1\1'\3\t\0B\1\2\1K\0\1\0002call vsnip#expandable() ? vsnip#expand() : ''\1\n\0\0\29#include <bits/stdc++.h>\25using namespace std;\5\17int main() {%    ios::sync_with_stdio(false);\26    cin.tie(nullptr);\t    \18    return 0;\6}\23nvim_buf_set_lines\bapi\bcpp\tFEXT\rfilepath\nedit \bcmd\bvim¸\2\1\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\4\0003\4\3\0=\4\5\0035\4\6\0=\4\a\0033\4\b\0=\4\t\3B\1\2\1K\0\1\0\15on_receive\0\14editor_ui\1\0\4\16popup_width\4š³æÌ\t™³æþ\3\rshow_rnu\1\fshow_nu\2\17popup_height\4³æÌ™\3³æŒÿ\3\27receiver_problems_path\1\0\5*start_receiving_persistently_on_setup\2\14editor_ui\0\26receive_print_message\2\27receiver_problems_path\0\15on_receive\0\0\nsetup\16competitest\frequire\0" },
+    config = { "\27LJ\2\n²\1\0\1\b\0\n\0\0206\1\0\0009\1\1\1'\3\2\0009\4\3\0B\1\3\0026\2\4\0009\2\5\2'\4\6\0\18\5\1\0'\6\a\0&\4\6\4B\2\2\0016\2\0\0009\2\1\2'\4\b\0\18\5\1\0009\6\3\0009\a\t\0B\2\5\2L\2\2\0\tFEXT\r%s/%s.%s\6\"\fmkdir \"\fexecute\aos\fPROBLEM&D:/Problems/mostafa_saad_sheet/%s\vformat\vstringÔ\2\0\1\b\0\n\0\0236\1\0\0009\1\1\1'\3\2\0009\4\3\0&\3\4\3B\1\2\0019\1\4\0\a\1\5\0X\1\t€6\1\0\0009\1\6\0019\1\a\1)\3\0\0)\4\0\0)\5ÿÿ+\6\1\0005\a\b\0B\1\6\0016\1\0\0009\1\1\1'\3\t\0B\1\2\1K\0\1\0002call vsnip#expandable() ? vsnip#expand() : ''\1\n\0\0\29#include <bits/stdc++.h>\25using namespace std;\5\17int main() {%    ios::sync_with_stdio(false);\26    cin.tie(nullptr);\t    \18    return 0;\6}\23nvim_buf_set_lines\bapi\bcpp\tFEXT\rfilepath\nedit \bcmd\bvim¸\2\1\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\4\0003\4\3\0=\4\5\0035\4\6\0=\4\a\0033\4\b\0=\4\t\3B\1\2\1K\0\1\0\15on_receive\0\14editor_ui\1\0\4\17popup_height\4³æÌ™\3³æŒÿ\3\16popup_width\4š³æÌ\t™³æþ\3\rshow_rnu\1\fshow_nu\2\27receiver_problems_path\1\0\5*start_receiving_persistently_on_setup\2\14editor_ui\0\26receive_print_message\2\27receiver_problems_path\0\15on_receive\0\0\nsetup\16competitest\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -114,7 +114,7 @@ _G.packer_plugins = {
     url = "https://github.com/xeluxee/competitest.nvim"
   },
   ["copilot.lua"] = {
-    config = { "\27LJ\2\ná\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\npanel\1\0\1\fenabled\2\15suggestion\1\0\2\npanel\0\15suggestion\0\vkeymap\1\0\4\fdismiss\n<C-]>\tprev\n<M-[>\vaccept\n<C-l>\tnext\n<M-]>\1\0\3\17auto_trigger\2\vkeymap\0\fenabled\2\nsetup\fcopilot\frequire\0" },
+    config = { "\27LJ\2\ná\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\npanel\1\0\1\fenabled\2\15suggestion\1\0\2\15suggestion\0\npanel\0\vkeymap\1\0\4\tnext\n<M-]>\tprev\n<M-[>\fdismiss\n<C-]>\vaccept\n<C-l>\1\0\3\17auto_trigger\2\fenabled\2\vkeymap\0\nsetup\fcopilot\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -233,10 +233,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-colorizer.lua
-time([[Config for nvim-colorizer.lua]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14colorizer\frequire\0", "config", "nvim-colorizer.lua")
-time([[Config for nvim-colorizer.lua]], false)
+-- Config for: rose-pine
+time([[Config for rose-pine]], true)
+try_loadstring("\27LJ\2\n}\0\0\6\0\a\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0006\3\3\0009\3\4\3'\5\5\0B\3\2\2>\3\1\2B\0\2\1K\0\1\0\1\0\1\16transparent\1\26colorscheme rose-pine\bcmd\bvim\nsetup\14rose-pine\frequire\0", "config", "rose-pine")
+time([[Config for rose-pine]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
@@ -245,14 +249,10 @@ time([[Config for Comment.nvim]], false)
 time([[Config for vim-exchange]], true)
 try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "vim-exchange")
 time([[Config for vim-exchange]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n}\0\0\6\0\a\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0006\3\3\0009\3\4\3'\5\5\0B\3\2\2>\3\1\2B\0\2\1K\0\1\0\1\0\1\16transparent\1\26colorscheme rose-pine\bcmd\bvim\nsetup\14rose-pine\frequire\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
+-- Config for: nvim-colorizer.lua
+time([[Config for nvim-colorizer.lua]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14colorizer\frequire\0", "config", "nvim-colorizer.lua")
+time([[Config for nvim-colorizer.lua]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
