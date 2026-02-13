@@ -15,7 +15,6 @@ vim.keymap.set("n", "<leader>rc", ":CompetiTest receive contest<CR>", { noremap 
 vim.keymap.set("n", "<leader>rs", ":CompetiTest show_ui<CR>", { noremap = true, silent = true, desc = "Show test UI" })
 vim.keymap.set('n', '<leader>w', ':bdelete<CR>', { silent = true })
 vim.api.nvim_set_keymap("i", "<C-k>", "<cmd>lua require'luasnip'.expand_or_jump()<CR>", {silent = true})
-vim.keymap.set('n', '<leader>de', require('telescope.builtin').diagnostics)
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("x", "<leader>p", [["_dP]])

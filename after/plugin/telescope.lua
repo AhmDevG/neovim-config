@@ -24,3 +24,8 @@ end)
 vim.keymap.set('n', '<leader>vh', function()
     builtin.help_tags({ previewer = false })
 end, {})
+
+
+vim.keymap.set('n', '<leader>de', function()
+    builtin.diagnostics({ previewer = false })
+end, {})
