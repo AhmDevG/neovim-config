@@ -5,13 +5,46 @@
       "#include <bits/stdc++.h>",
       "using namespace std;",
       "",
-      "typedef long long ll;",
-      "typedef vector<int> vi;",
+      "using ll = long long;",
+      "using ull = unsigned long long;",
+      "using pii = pair<int,int>;",
+      "using pll = pair<ll,ll>;",
+      "using vi = vector<int>;",
+      "using vll = vector<ll>;",
+
       "",
+      "#define all(x) (x).begin(), (x).end()",
+      "#define sz(x) (int)(x).size()",
+      "#define pb push_back",
+      "#define mp make_pair",
+      "#define F first",
+      "#define S second",
+
+      "",
+
+      "const int INF = 1e9;",
+      "const ll LINF = 1e18;",
+      "const int MOD = 1e9+7;",
+
+      "",
+
+      "#define fastio ios::sync_with_stdio(false); cin.tie(nullptr);",
+      "#define debug(x) cerr << #x << \" = \" << x << endl;",
+
+      "",
+
+
+      "void solve(){",
+          "    $0;",
+      "}",
+
       "int main() {",
-      "    ios_base::sync_with_stdio(false);",
-      "    cin.tie(nullptr);",
-      "    $0",
+      "    fastio;",
+      "    int t = 1;",
+      "    // cin >> t;",
+      "    while(t--){",
+      "       solve();",
+      "    }",
       "    return 0;",
       "}"
     ],
@@ -33,15 +66,5 @@
       "for (int i = 0; i < n; i++) cin >> a[i];"
     ],
     "description": "Vector input snippet"
-  },
-  "tc": {
-    "prefix": "tc",
-    "body": [
-      "int t; cin >> t;",
-      "while (t--) {",
-      "    $0",
-      "}"
-    ],
-    "description": "Testcases loop snippet"
   }
 }

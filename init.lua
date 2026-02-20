@@ -1,5 +1,6 @@
 require("config.sets")
 require("config.remaps")
+require("config.dap")
 
 local colors = require("config.colors")
 
