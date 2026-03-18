@@ -5,17 +5,17 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     use ('wbthomason/packer.nvim')
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.8', requires = { {'nvim-lua/plenary.nvim'} }, } 
-    use({
-        "rose-pine/neovim",
-        as = "rose-pine",
-        -- cmd = 'colorscheme rose-pine',
-        config = function()
-            require("rose-pine").setup({
-                vim.cmd("colorscheme rose-pine"),
-                transparent = false
-            })
-        end,
-    })
+    -- use({
+    --     "rose-pine/neovim",
+    --     as = "rose-pine",
+    --     -- cmd = 'colorscheme rose-pine',
+    --     config = function()
+    --         require("rose-pine").setup({
+    --             vim.cmd("colorscheme rose-pine"),
+    --             transparent = false
+    --         })
+    --     end,
+    -- })
     --
     --
     -- use({
@@ -30,17 +30,17 @@ return require('packer').startup(function(use)
     --         vim.cmd("colorscheme kanagawa-dragon")
     --     end
     -- })
-    -- use({
-    --     'navarasu/onedark.nvim',
-    --     as = 'onedark',
-    --     config = function ()
-    --         require('onedark').setup({
-    --             style = 'warmer',
-    --             transparent = false 
-    --         })
-    --         require('onedark').load()
-    --     end
-    -- })
+    use({
+        'navarasu/onedark.nvim',
+        as = 'onedark',
+        config = function ()
+            require('onedark').setup({
+                style = 'darker',
+                transparent = false
+            })
+            require('onedark').load()
+        end
+    })
     --
     --
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
