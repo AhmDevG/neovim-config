@@ -59,6 +59,27 @@
     ],
     "description": "For-loop snippet"
   },
+
+  "forj": {
+    "prefix": "forj",
+    "body": [
+      "for (int j = 0; j < n; j++) {",
+      "    $0",
+      "}"
+    ],
+    "description": "For-loop snippet"
+  },
+
+  "fork": {
+    "prefix": "fork",
+    "body": [
+      "for (int k = 0; k < n; k++) {",
+      "    $0",
+      "}"
+    ],
+    "description": "For-loop snippet"
+  },
+
   "vin": {
     "prefix": "vin",
     "body": [

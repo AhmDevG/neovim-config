@@ -234,4 +234,58 @@ return require('packer').startup(function(use)
         end
     }
 
+    use {
+        "ej-shafran/compile-mode.nvim",
+        version = "^5.0.0",
+        branch = "latest",
+        requires = {
+            "nvim-lua/plenary.nvim",
+        },
+        config = function()
+            vim.g.compile_mode = {
+                default_command = function()
+                    local file = vim.api.nvim_buf_get_name(0)
+                    local file_no_ext = file:gsub("%.%w+$", "")
+                    local ft = vim.bo.filetype
+
+                    if file == "" then
+                        print("save file first !")
+                        return ""
+                    end
+
+                    if ft == "cpp" then
+                        return "g++ -std=c++17 -O2 -Wall \"" .. file .. "\" -o \"" .. file_no_ext .. "\" && \"" .. file_no_ext .. "\""
+                    elseif ft == "python" then
+                        return "python \"" .. file .. "\""
+                    elseif ft == "javascript" then
+                        return "node \"" .. file .. "\""
+                    elseif ft == "typescript" then
+                        return "ts-node \"" .. file .. "\""
+                    else
+                        print("file type " .. ft .. " is not supported for compilation [ADD IT YOURSELF BIT*H]")
+                        return ""
+                    end
+                end,
+
+                window = {
+                    split = "below",
+                    size = 12,
+                },
+
+                auto_close = false,
+                auto_scroll = true,
+                use_terminal = true,
+            }
+
+            vim.keymap.set("n", "<leader>r", function()
+                vim.cmd("w")
+                vim.cmd("below Compile")
+            end, { desc = "Compile & Run" })
+
+            vim.keymap.set("n", "<leader>R", function()
+                vim.cmd("below Recompile")
+            end, { desc = "Recompile" })
+        end
+    }
+
 end)

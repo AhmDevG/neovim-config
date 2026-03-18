@@ -2,36 +2,35 @@
 
 vim.g.mapleader = " "
 
+local keymap = vim.keymap.set
 
-vim.keymap.set("n" , "<leader>pv" , vim.cmd.Ex)
 
-
-vim.keymap.set("v" , "J" , ":m '>+1<CR>gv=gv")
-vim.keymap.set("v" , "K" , ":m '<-2<CR>gv=gv")
-vim.keymap.set("n", "<leader>rr", ":CompetiTest run<CR>", { noremap = true, silent = true, desc = "Run testcases" })
-vim.keymap.set("n", "<leader>ra", ":CompetiTest add_testcase<CR>", { noremap = true, silent = true, desc = "Add testcase" })
-vim.keymap.set("n", "<leader>re", ":CompetiTest edit_testcase<CR>", { noremap = true, silent = true, desc = "Edit testcase" })
-vim.keymap.set("n", "<leader>rd", ":CompetiTest delete_testcase<CR>", { noremap = true, silent = true, desc = "Delete testcase" })
-vim.keymap.set("n", "<leader>rp", ":CompetiTest receive problem<CR>", { noremap = true, silent = true, desc = "Receive problem" })
-vim.keymap.set("n", "<leader>rc", ":CompetiTest receive contest<CR>", { noremap = true, silent = true, desc = "Receive contest" })
-vim.keymap.set("n", "<leader>rs", ":CompetiTest show_ui<CR>", { noremap = true, silent = true, desc = "Show test UI" })
-vim.keymap.set('n', '<leader>w', ':bdelete<CR>', { silent = true })
-vim.api.nvim_set_keymap("i", "<C-k>", "<cmd>lua require'luasnip'.expand_or_jump()<CR>", {silent = true})
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
-vim.keymap.set("x", "<leader>p", [["_dP]])
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-vim.keymap.set("n", "<leader>vpp", "<cmd>e  C:/Users/Ahmed-PC/AppData/Local/nvim/lua/config/packer.lua<CR>");
-vim.keymap.set("n", "<leader><leader>", function()
+keymap("n" , "<leader>pv" , vim.cmd.Ex)
+keymap("v" , "J" , ":m '>+1<CR>gv=gv")
+keymap("v" , "K" , ":m '<-2<CR>gv=gv")
+keymap("n", "<leader>rr", ":CompetiTest run<CR>", { noremap = true, silent = true, desc = "Run testcases" })
+keymap("n", "<leader>ra", ":CompetiTest add_testcase<CR>", { noremap = true, silent = true, desc = "Add testcase" })
+keymap("n", "<leader>re", ":CompetiTest edit_testcase<CR>", { noremap = true, silent = true, desc = "Edit testcase" })
+keymap("n", "<leader>rd", ":CompetiTest delete_testcase<CR>", { noremap = true, silent = true, desc = "Delete testcase" })
+keymap("n", "<leader>rp", ":CompetiTest receive problem<CR>", { noremap = true, silent = true, desc = "Receive problem" })
+keymap("n", "<leader>rc", ":CompetiTest receive contest<CR>", { noremap = true, silent = true, desc = "Receive contest" })
+keymap("n", "<leader>rs", ":CompetiTest show_ui<CR>", { noremap = true, silent = true, desc = "Show test UI" })
+keymap('n', '<leader>w', ':bdelete<CR>', { silent = true })
+keymap("i", "<C-k>", "<cmd>lua require'luasnip'.expand_or_jump()<CR>", {silent = true})
+keymap("n", "<C-d>", "<C-d>zz")
+keymap("n", "<C-u>", "<C-u>zz")
+keymap("x", "<leader>p", [["_dP]])
+keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+keymap("n", "<leader>vpp", "<cmd>e  C:/Users/Ahmed-PC/AppData/Local/nvim/lua/config/packer.lua<CR>");
+keymap("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
-vim.keymap.set("n", "J", "mzJ`z")
-vim.keymap.set("x", "<leader>p", [["_dP]])
+keymap("n", "n", "nzzzv")
+keymap("n", "N", "Nzzzv")
+keymap("n", "J", "mzJ`z")
+keymap("x", "<leader>p", [["_dP]])
 
-
-vim.keymap.set("i", "<Tab>", function()
+keymap("i", "<Tab>", function()
 
   if vim.fn == 1 then
     return "<Plug>(vsnip-expand-or-jump)"
@@ -39,26 +38,26 @@ vim.keymap.set("i", "<Tab>", function()
   return "<Tab>"
 end, { expr = true })
 
-vim.keymap.set("i", "<S-Tab>", function()
+keymap("i", "<S-Tab>", function()
   if vim.fn["vsnip#jumpable"](-1) == 1 then
     return "<Plug>(vsnip-jump-prev)"
   end
   return "<S-Tab>"
 end, { expr = true })
 
-vim.keymap.set("n", "p", function()
+keymap("n", "p", function()
     local row, col = unpack(vim.api.nvim_win_get_cursor(0))
     vim.cmd("normal! p")
     vim.api.nvim_win_set_cursor(0, { row+1, col })
 end, { noremap = true, silent = true })
 
-vim.keymap.set("n", "P", function()
+keymap("n", "P", function()
     local row, col = unpack(vim.api.nvim_win_get_cursor(0))
     vim.cmd("normal! P")
     vim.api.nvim_win_set_cursor(0, { row+1, col })
 end, { noremap = true, silent = true })
 
-vim.keymap.set("v", "y", function()
+keymap("v", "y", function()
     local row, col = unpack(vim.api.nvim_win_get_cursor(0))
     vim.cmd("normal! y")
     vim.api.nvim_win_set_cursor(0, { row, col })
