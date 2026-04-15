@@ -17,7 +17,13 @@ vim.opt.backup = false
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
+vim.opt.autochdir = true
+vim.opt.ignorecase = true
 vim.opt.incsearch = true
+vim.opt.smartcase = true
+vim.opt.wildmenu = true
+vim.opt.wildmode = "full"
+vim.opt.complete:append("k")
 
 vim.opt.termguicolors = true
 
@@ -27,7 +33,7 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "130"
 vim.g.vsnip_snippet_dir = vim.fn.stdpath("config") .. "/snippets"
 
 vim.cmd("set lazyredraw")

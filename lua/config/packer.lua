@@ -1,50 +1,20 @@
--- @diagnostic disable: undefined-global 
-
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     use ('wbthomason/packer.nvim')
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.8', requires = { {'nvim-lua/plenary.nvim'} }, } 
-    -- use({
-    --     "rose-pine/neovim",
-    --     as = "rose-pine",
-    --     -- cmd = 'colorscheme rose-pine',
-    --     config = function()
-    --         require("rose-pine").setup({
-    --             vim.cmd("colorscheme rose-pine"),
-    --             transparent = false
-    --         })
-    --     end,
-    -- })
-    --
-    --
-    -- use({
-    --     "rebelot/kanagawa.nvim",
-    --     as = "kanagawa",
-    --     config = function()
-    --         require("kanagawa").setup({
-    --             commentStyle = { italic = true },
-    --             keywordStyle = { italic = false },
-    --             transparent = false,
-    --         })
-    --         vim.cmd("colorscheme kanagawa-dragon")
-    --     end
-    -- })
     use({
         'navarasu/onedark.nvim',
         as = 'onedark',
         config = function ()
             require('onedark').setup({
                 style = 'darker',
-                transparent = false
+                transparent = true
             })
             require('onedark').load()
         end
     })
-    --
-    --
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
-    -- use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
 
@@ -62,11 +32,9 @@ return require('packer').startup(function(use)
             {'hrsh7th/cmp-path'},
             {'hrsh7th/cmp-nvim-lua'},
 
-            -- Snippets (vsnip ONLY)
             "hrsh7th/vim-vsnip",
             "hrsh7th/cmp-vsnip",
 
-            -- Snippets collection
             "rafamadriz/friendly-snippets",
         }
     })
@@ -91,24 +59,6 @@ return require('packer').startup(function(use)
         end
     })
 
-    --use({
-    --    "andweeb/presence.nvim",
-    --    config = function()
-    --        require("presence").setup({
-    --            neovim_image_text   = "Neovim IDE",
-    --            main_image          = "neovim",    
-    --            debounce_timeout    = 10,
-    --            enable_line_number  = true,
-    --            editing_text        = "Editing %s",
-    --            file_explorer_text  = "Browsing %s",
-    --            git_commit_text     = "Committing changes",
-    --            plugin_manager_text = "Managing plugins",
-    --            reading_text        = "Reading %s",
-    --            workspace_text      = "Working on %s",
-    --            line_number_text    = "Line %s out of %s",
-    --        })
-    --    end
-    --})
 
     use({
         'numToStr/Comment.nvim',
@@ -171,16 +121,6 @@ return require('packer').startup(function(use)
     })
 
 
-    -- use({
-    --     'nvim-lualine/lualine.nvim',
-    --     requires = { 'nvim-tree/nvim-web-devicons', opt = true },
-    --     config = function()
-    --         require('lualine').setup({
-    --             options = { theme = 'auto', section_separators = '', component_separators = '' }
-    --         })
-    --     end,
-    -- })
-    --
 
     use {
         "rafamadriz/friendly-snippets",
@@ -199,27 +139,6 @@ return require('packer').startup(function(use)
     use {
         "mg979/vim-visual-multi"
     }
-    --
-    -- use {
-    --     "sphamba/smear-cursor.nvim",
-    --     config = function()
-    --         require("smear_cursor").setup({
-    --             stiffness = 0.5,
-    --             trailing_stiffness = 0.5,
-    --             matrix_pixel_threshold = 0.5
-    --         })
-    --     end
-    -- }
-    --
-    --
-    -- use {
-    --     "nvzone/floaterm",
-    --     requires = { "nvzone/volt" },
-    --     config = function()
-    --         require("floaterm").setup({})
-    --     end,
-    --     cmd = { "FloatermToggle" },
-    -- }
 
     use {
 	    "norcalli/nvim-colorizer.lua",
