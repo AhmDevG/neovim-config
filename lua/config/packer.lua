@@ -3,17 +3,17 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     use ('wbthomason/packer.nvim')
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.8', requires = { {'nvim-lua/plenary.nvim'} }, } 
-    use({
-        'navarasu/onedark.nvim',
-        as = 'onedark',
-        config = function ()
-            require('onedark').setup({
-                style = 'darker',
-                transparent = true
-            })
-            require('onedark').load()
-        end
-    })
+    -- use({
+    --     'navarasu/onedark.nvim',
+    --     as = 'onedark',
+    --     config = function ()
+    --         require('onedark').setup({
+    --             style = 'darker',
+    --             transparent = true
+    --         })
+    --         require('onedark').load()
+    --     end
+    -- })
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
@@ -204,6 +204,13 @@ return require('packer').startup(function(use)
             vim.keymap.set("n", "<leader>R", function()
                 vim.cmd("below Recompile")
             end, { desc = "Recompile" })
+        end
+    }
+
+    use {
+        "bavajitu/brellary.nvim",
+        config = function()
+            vim.cmd("colorscheme brellary")
         end
     }
 

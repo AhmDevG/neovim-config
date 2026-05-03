@@ -80,6 +80,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
+  ["brellary.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme brellary\bcmd\bvim\0" },
+    loaded = true,
+    path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\brellary.nvim",
+    url = "https://github.com/bavajitu/brellary.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -106,7 +112,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["competitest.nvim"] = {
-    config = { "\27LJ\2\n²\1\0\1\b\0\n\0\0206\1\0\0009\1\1\1'\3\2\0009\4\3\0B\1\3\0026\2\4\0009\2\5\2'\4\6\0\18\5\1\0'\6\a\0&\4\6\4B\2\2\0016\2\0\0009\2\1\2'\4\b\0\18\5\1\0009\6\3\0009\a\t\0B\2\5\2L\2\2\0\tFEXT\r%s/%s.%s\6\"\fmkdir \"\fexecute\aos\fPROBLEM&D:/Problems/mostafa_saad_sheet/%s\vformat\vstringÔ\2\0\1\b\0\n\0\0236\1\0\0009\1\1\1'\3\2\0009\4\3\0&\3\4\3B\1\2\0019\1\4\0\a\1\5\0X\1\t€6\1\0\0009\1\6\0019\1\a\1)\3\0\0)\4\0\0)\5ÿÿ+\6\1\0005\a\b\0B\1\6\0016\1\0\0009\1\1\1'\3\t\0B\1\2\1K\0\1\0002call vsnip#expandable() ? vsnip#expand() : ''\1\n\0\0\29#include <bits/stdc++.h>\25using namespace std;\5\17int main() {%    ios::sync_with_stdio(false);\26    cin.tie(nullptr);\t    \18    return 0;\6}\23nvim_buf_set_lines\bapi\bcpp\tFEXT\rfilepath\nedit \bcmd\bvim¸\2\1\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\4\0003\4\3\0=\4\5\0035\4\6\0=\4\a\0033\4\b\0=\4\t\3B\1\2\1K\0\1\0\15on_receive\0\14editor_ui\1\0\4\rshow_rnu\1\fshow_nu\2\17popup_height\4³æÌ™\3³æŒÿ\3\16popup_width\4š³æÌ\t™³æþ\3\27receiver_problems_path\1\0\5\27receiver_problems_path\0\14editor_ui\0\26receive_print_message\2*start_receiving_persistently_on_setup\2\15on_receive\0\0\nsetup\16competitest\frequire\0" },
+    config = { "\27LJ\2\n²\1\0\1\b\0\n\0\0206\1\0\0009\1\1\1'\3\2\0009\4\3\0B\1\3\0026\2\4\0009\2\5\2'\4\6\0\18\5\1\0'\6\a\0&\4\6\4B\2\2\0016\2\0\0009\2\1\2'\4\b\0\18\5\1\0009\6\3\0009\a\t\0B\2\5\2L\2\2\0\tFEXT\r%s/%s.%s\6\"\fmkdir \"\fexecute\aos\fPROBLEM&D:/Problems/mostafa_saad_sheet/%s\vformat\vstringÔ\2\0\1\b\0\n\0\0236\1\0\0009\1\1\1'\3\2\0009\4\3\0&\3\4\3B\1\2\0019\1\4\0\a\1\5\0X\1\t€6\1\0\0009\1\6\0019\1\a\1)\3\0\0)\4\0\0)\5ÿÿ+\6\1\0005\a\b\0B\1\6\0016\1\0\0009\1\1\1'\3\t\0B\1\2\1K\0\1\0002call vsnip#expandable() ? vsnip#expand() : ''\1\n\0\0\29#include <bits/stdc++.h>\25using namespace std;\5\17int main() {%    ios::sync_with_stdio(false);\26    cin.tie(nullptr);\t    \18    return 0;\6}\23nvim_buf_set_lines\bapi\bcpp\tFEXT\rfilepath\nedit \bcmd\bvim¸\2\1\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\4\0003\4\3\0=\4\5\0035\4\6\0=\4\a\0033\4\b\0=\4\t\3B\1\2\1K\0\1\0\15on_receive\0\14editor_ui\1\0\4\17popup_height\4³æÌ™\3³æŒÿ\3\fshow_nu\2\rshow_rnu\1\16popup_width\4š³æÌ\t™³æþ\3\27receiver_problems_path\1\0\5\14editor_ui\0\26receive_print_message\2*start_receiving_persistently_on_setup\2\27receiver_problems_path\0\15on_receive\0\0\nsetup\16competitest\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -114,13 +120,13 @@ _G.packer_plugins = {
     url = "https://github.com/xeluxee/competitest.nvim"
   },
   ["compile-mode.nvim"] = {
-    config = { "\27LJ\2\n\4\0\0\n\0\23\0A6\0\0\0009\0\1\0009\0\2\0)\2\0\0B\0\2\2\18\3\0\0009\1\3\0'\4\4\0'\5\5\0B\1\4\0026\2\0\0009\2\6\0029\2\a\2\a\0\5\0X\3\5€6\3\b\0'\5\t\0B\3\2\1'\3\5\0L\3\2\0\a\2\n\0X\3\n€'\3\v\0\18\4\0\0'\5\f\0\18\6\1\0'\a\r\0\18\b\1\0'\t\14\0&\3\t\3L\3\2\0X\3 €\a\2\15\0X\3\6€'\3\16\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\24€\a\2\17\0X\3\6€'\3\18\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\16€\a\2\19\0X\3\6€'\3\20\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\b€6\3\b\0'\5\21\0\18\6\2\0'\a\22\0&\5\a\5B\3\2\1'\3\5\0L\3\2\0K\0\1\0> is not supported for compilation [ADD IT YOURSELF BIT*H]\15file type \14ts-node \"\15typescript\vnode \"\15javascript\rpython \"\vpython\6\"\v\" && \"\v\" -o \"\31g++ -std=c++17 -O2 -Wall \"\bcpp\22save file first !\nprint\rfiletype\abo\5\v%.%w+$\tgsub\22nvim_buf_get_name\bapi\bvimC\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0\18below Compile\6w\bcmd\bvim3\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\20below Recompile\bcmd\bvimº\2\1\0\6\0\17\0\0256\0\0\0009\0\1\0005\1\4\0003\2\3\0=\2\5\0015\2\6\0=\2\a\1=\1\2\0006\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\v\0003\4\f\0005\5\r\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\14\0003\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\14Recompile\0\14<leader>R\1\0\1\tdesc\18Compile & Run\0\14<leader>r\6n\bset\vkeymap\vwindow\1\0\2\nsplit\nbelow\tsize\3\f\20default_command\1\0\5\15auto_close\1\20default_command\0\vwindow\0\16auto_scroll\2\17use_terminal\2\0\17compile_mode\6g\bvim\0" },
+    config = { "\27LJ\2\n\4\0\0\n\0\23\0A6\0\0\0009\0\1\0009\0\2\0)\2\0\0B\0\2\2\18\3\0\0009\1\3\0'\4\4\0'\5\5\0B\1\4\0026\2\0\0009\2\6\0029\2\a\2\a\0\5\0X\3\5€6\3\b\0'\5\t\0B\3\2\1'\3\5\0L\3\2\0\a\2\n\0X\3\n€'\3\v\0\18\4\0\0'\5\f\0\18\6\1\0'\a\r\0\18\b\1\0'\t\14\0&\3\t\3L\3\2\0X\3 €\a\2\15\0X\3\6€'\3\16\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\24€\a\2\17\0X\3\6€'\3\18\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\16€\a\2\19\0X\3\6€'\3\20\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\b€6\3\b\0'\5\21\0\18\6\2\0'\a\22\0&\5\a\5B\3\2\1'\3\5\0L\3\2\0K\0\1\0> is not supported for compilation [ADD IT YOURSELF BIT*H]\15file type \14ts-node \"\15typescript\vnode \"\15javascript\rpython \"\vpython\6\"\v\" && \"\v\" -o \"\31g++ -std=c++17 -O2 -Wall \"\bcpp\22save file first !\nprint\rfiletype\abo\5\v%.%w+$\tgsub\22nvim_buf_get_name\bapi\bvimC\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0\18below Compile\6w\bcmd\bvim3\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\20below Recompile\bcmd\bvimº\2\1\0\6\0\17\0\0256\0\0\0009\0\1\0005\1\4\0003\2\3\0=\2\5\0015\2\6\0=\2\a\1=\1\2\0006\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\v\0003\4\f\0005\5\r\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\14\0003\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\14Recompile\0\14<leader>R\1\0\1\tdesc\18Compile & Run\0\14<leader>r\6n\bset\vkeymap\vwindow\1\0\2\tsize\3\f\nsplit\nbelow\20default_command\1\0\5\17use_terminal\2\20default_command\0\vwindow\0\15auto_close\1\16auto_scroll\2\0\17compile_mode\6g\bvim\0" },
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\compile-mode.nvim",
     url = "https://github.com/ej-shafran/compile-mode.nvim"
   },
   ["copilot.lua"] = {
-    config = { "\27LJ\2\ná\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\npanel\1\0\1\fenabled\2\15suggestion\1\0\2\npanel\0\15suggestion\0\vkeymap\1\0\4\vaccept\n<C-l>\tnext\n<M-]>\fdismiss\n<C-]>\tprev\n<M-[>\1\0\3\17auto_trigger\2\fenabled\2\vkeymap\0\nsetup\fcopilot\frequire\0" },
+    config = { "\27LJ\2\ná\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\npanel\1\0\1\fenabled\2\15suggestion\1\0\2\15suggestion\0\npanel\0\vkeymap\1\0\4\tprev\n<M-[>\fdismiss\n<C-]>\tnext\n<M-]>\vaccept\n<C-l>\1\0\3\fenabled\2\vkeymap\0\17auto_trigger\2\nsetup\fcopilot\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -184,12 +190,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  onedark = {
-    config = { "\27LJ\2\no\0\0\3\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\tload\1\0\2\nstyle\vdarker\16transparent\2\nsetup\fonedark\frequire\0" },
-    loaded = true,
-    path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark",
-    url = "https://github.com/navarasu/onedark.nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -245,7 +245,7 @@ try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K
 time([[Config for Comment.nvim]], false)
 -- Config for: compile-mode.nvim
 time([[Config for compile-mode.nvim]], true)
-try_loadstring("\27LJ\2\n\4\0\0\n\0\23\0A6\0\0\0009\0\1\0009\0\2\0)\2\0\0B\0\2\2\18\3\0\0009\1\3\0'\4\4\0'\5\5\0B\1\4\0026\2\0\0009\2\6\0029\2\a\2\a\0\5\0X\3\5€6\3\b\0'\5\t\0B\3\2\1'\3\5\0L\3\2\0\a\2\n\0X\3\n€'\3\v\0\18\4\0\0'\5\f\0\18\6\1\0'\a\r\0\18\b\1\0'\t\14\0&\3\t\3L\3\2\0X\3 €\a\2\15\0X\3\6€'\3\16\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\24€\a\2\17\0X\3\6€'\3\18\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\16€\a\2\19\0X\3\6€'\3\20\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\b€6\3\b\0'\5\21\0\18\6\2\0'\a\22\0&\5\a\5B\3\2\1'\3\5\0L\3\2\0K\0\1\0> is not supported for compilation [ADD IT YOURSELF BIT*H]\15file type \14ts-node \"\15typescript\vnode \"\15javascript\rpython \"\vpython\6\"\v\" && \"\v\" -o \"\31g++ -std=c++17 -O2 -Wall \"\bcpp\22save file first !\nprint\rfiletype\abo\5\v%.%w+$\tgsub\22nvim_buf_get_name\bapi\bvimC\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0\18below Compile\6w\bcmd\bvim3\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\20below Recompile\bcmd\bvimº\2\1\0\6\0\17\0\0256\0\0\0009\0\1\0005\1\4\0003\2\3\0=\2\5\0015\2\6\0=\2\a\1=\1\2\0006\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\v\0003\4\f\0005\5\r\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\14\0003\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\14Recompile\0\14<leader>R\1\0\1\tdesc\18Compile & Run\0\14<leader>r\6n\bset\vkeymap\vwindow\1\0\2\nsplit\nbelow\tsize\3\f\20default_command\1\0\5\15auto_close\1\20default_command\0\vwindow\0\16auto_scroll\2\17use_terminal\2\0\17compile_mode\6g\bvim\0", "config", "compile-mode.nvim")
+try_loadstring("\27LJ\2\n\4\0\0\n\0\23\0A6\0\0\0009\0\1\0009\0\2\0)\2\0\0B\0\2\2\18\3\0\0009\1\3\0'\4\4\0'\5\5\0B\1\4\0026\2\0\0009\2\6\0029\2\a\2\a\0\5\0X\3\5€6\3\b\0'\5\t\0B\3\2\1'\3\5\0L\3\2\0\a\2\n\0X\3\n€'\3\v\0\18\4\0\0'\5\f\0\18\6\1\0'\a\r\0\18\b\1\0'\t\14\0&\3\t\3L\3\2\0X\3 €\a\2\15\0X\3\6€'\3\16\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\24€\a\2\17\0X\3\6€'\3\18\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\16€\a\2\19\0X\3\6€'\3\20\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\b€6\3\b\0'\5\21\0\18\6\2\0'\a\22\0&\5\a\5B\3\2\1'\3\5\0L\3\2\0K\0\1\0> is not supported for compilation [ADD IT YOURSELF BIT*H]\15file type \14ts-node \"\15typescript\vnode \"\15javascript\rpython \"\vpython\6\"\v\" && \"\v\" -o \"\31g++ -std=c++17 -O2 -Wall \"\bcpp\22save file first !\nprint\rfiletype\abo\5\v%.%w+$\tgsub\22nvim_buf_get_name\bapi\bvimC\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0\18below Compile\6w\bcmd\bvim3\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\20below Recompile\bcmd\bvimº\2\1\0\6\0\17\0\0256\0\0\0009\0\1\0005\1\4\0003\2\3\0=\2\5\0015\2\6\0=\2\a\1=\1\2\0006\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\v\0003\4\f\0005\5\r\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\14\0003\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\14Recompile\0\14<leader>R\1\0\1\tdesc\18Compile & Run\0\14<leader>r\6n\bset\vkeymap\vwindow\1\0\2\tsize\3\f\nsplit\nbelow\20default_command\1\0\5\17use_terminal\2\20default_command\0\vwindow\0\15auto_close\1\16auto_scroll\2\0\17compile_mode\6g\bvim\0", "config", "compile-mode.nvim")
 time([[Config for compile-mode.nvim]], false)
 -- Config for: nvim-colorizer.lua
 time([[Config for nvim-colorizer.lua]], true)
@@ -255,10 +255,10 @@ time([[Config for nvim-colorizer.lua]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
--- Config for: onedark
-time([[Config for onedark]], true)
-try_loadstring("\27LJ\2\no\0\0\3\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\tload\1\0\2\nstyle\vdarker\16transparent\2\nsetup\fonedark\frequire\0", "config", "onedark")
-time([[Config for onedark]], false)
+-- Config for: brellary.nvim
+time([[Config for brellary.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme brellary\bcmd\bvim\0", "config", "brellary.nvim")
+time([[Config for brellary.nvim]], false)
 -- Config for: vim-exchange
 time([[Config for vim-exchange]], true)
 try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "vim-exchange")

@@ -64,7 +64,7 @@ keymap("v", "y", function()
 end, { noremap = true, silent = true })
 
 
-vim.keymap.set("n", "ge", function()
+keymap("n", "ge", function()
     local path = vim.fn.expand("%:p:h") .. "/"
     vim.api.nvim_feedkeys(":e " .. path, "n", false)
 end, { noremap = true })
