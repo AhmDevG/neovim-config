@@ -206,11 +206,25 @@ return require('packer').startup(function(use)
             end, { desc = "Recompile" })
         end
     }
+    --
+    -- use {
+    --     "bavajitu/brellary.nvim",
+    --     config = function()
+    --         vim.cmd("colorscheme brellary")
+    --     end
+    -- }
+    --
 
     use {
-        "bavajitu/brellary.nvim",
+        "ydkulks/cursor-dark.nvim",
         config = function()
-            vim.cmd("colorscheme brellary")
+            require("cursor-dark").setup({
+                style = "dark-midnight",
+                transparent = true,
+                dashboard = true,
+            })
+
+            vim.cmd("colorscheme cursor-dark")
         end
     }
 
