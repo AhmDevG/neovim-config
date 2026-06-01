@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
     --         require('onedark').load()
     --     end
     -- })
-    use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
+    --use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
 
@@ -39,25 +39,25 @@ return require('packer').startup(function(use)
         }
     })
 
-    use({
-        "zbirenbaum/copilot.lua",
-        event = "InsertEnter",
-        config = function()
-            require("copilot").setup({
-                suggestion = {
-                    enabled = true,
-                    auto_trigger = true,
-                    keymap = {
-                        accept = "<C-l>",  						
-                        next = "<M-]>",
-                        prev = "<M-[>",
-                        dismiss = "<C-]>",
-                    },
-                },
-                panel = { enabled = true },
-            })
-        end
-    })
+    -- use({
+    --     "zbirenbaum/copilot.lua",
+    --     event = "InsertEnter",
+    --     config = function()
+    --         require("copilot").setup({
+    --             suggestion = {
+    --                 enabled = true,
+    --                 auto_trigger = true,
+    --                 keymap = {
+    --                     accept = "<C-l>",  						
+    --                     next = "<M-]>",
+    --                     prev = "<M-[>",
+    --                     dismiss = "<C-]>",
+    --                 },
+    --             },
+    --             panel = { enabled = true },
+    --         })
+    --     end
+    -- })
 
 
     use({
@@ -85,7 +85,7 @@ return require('packer').startup(function(use)
                     return file_path
                 end,
 
-                start_receiving_persistently_on_setup = true,
+                start_receiving_persistently_on_setup = false,
                 receive_print_message = true,
 
                 editor_ui = {
@@ -127,17 +127,12 @@ return require('packer').startup(function(use)
     }
 
 
-    use "tpope/vim-surround"
 
     use {
         "windwp/nvim-autopairs",
         config = function()
             require("nvim-autopairs").setup{}
         end
-    }
-
-    use {
-        "mg979/vim-visual-multi"
     }
 
     use {

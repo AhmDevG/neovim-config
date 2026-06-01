@@ -53,8 +53,7 @@ cmp.setup({
 -- Mason
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "clangd", "lua_ls", "pyright" , "tsserver" },
-  handlers = { lsp.default_setup },
+  ensure_installed = {"lua_ls"},
 })
 
 -- LSP-zero Setup + Keymaps
@@ -81,14 +80,37 @@ lsp.on_attach(function(client, bufnr)
   end, opts)
 end)
 
-require("lspconfig").pyright.setup({
-  settings = {
-    python = {
-      pythonPath =
-        "C:/Users/Ahmed-PC/AppData/Local/Programs/Python/Python312/python.exe",
-    },
-  },
+lspconfig.lua_ls.setup({})
+
+vim.api.nvim_create_auto_cmd("FileType" ,{
+    pattern = "python",
+    callback = function ()
+        require("lspconfig").pyright.setup({
+          settings = {
+            python = {
+              pythonPath =
+                "C:/Users/Ahmed-PC/AppData/Local/Programs/Python/Python312/python.exe",
+            },
+          },
+        })
+    end
+
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "javascript", "typescript" },
+  callback = function()
+    require("lspconfig").tsserver.setup({})
+  end
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "cpp",
+  callback = function()
+    require("lspconfig").clangd.setup({})
+  end
+})
+
 
 lsp.setup()
 
