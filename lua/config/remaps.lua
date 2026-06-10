@@ -73,3 +73,8 @@ end, { noremap = true })
 keymap("n" , "<Tab>" , "<Cmd>BufferNext<CR>" , { silent = true })
 keymap("n" , "<S-Tab>" , "<Cmd>BufferPrevious<CR>" , { silent = true })
 keymap('n', '<leader>w', '<Cmd>BufferClose<CR>', { silent = true })
+keymap("n", "<leader>0", "<Cmd>BufferLast<CR>")
+
+for i = 1, 9 do
+    keymap("n", "<leader>" .. i, "<Cmd>BufferGoto " .. i .. "<CR>")
+end
