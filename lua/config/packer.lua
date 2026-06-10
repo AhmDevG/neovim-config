@@ -15,7 +15,6 @@ return require('packer').startup(function(use)
     --     end
     -- })
     --use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
-    use('theprimeagen/harpoon')
     use('mbbill/undotree')
 
     use({
@@ -222,5 +221,9 @@ return require('packer').startup(function(use)
             vim.cmd("colorscheme cursor-dark")
         end
     }
+
+    use {'nvim-tree/nvim-web-devicons'}
+    use {'lewis6991/gitsigns.nvim'}
+    use {'romgrk/barbar.nvim'}
 
 end)

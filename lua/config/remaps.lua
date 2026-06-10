@@ -15,7 +15,6 @@ keymap("n", "<leader>rd", ":CompetiTest delete_testcase<CR>", { noremap = true, 
 keymap("n", "<leader>rp", ":CompetiTest receive problem<CR>", { noremap = true, silent = true, desc = "Receive problem" })
 keymap("n", "<leader>rc", ":CompetiTest receive contest<CR>", { noremap = true, silent = true, desc = "Receive contest" })
 keymap("n", "<leader>rs", ":CompetiTest show_ui<CR>", { noremap = true, silent = true, desc = "Show test UI" })
-keymap('n', '<leader>w', ':bdelete<CR>', { silent = true })
 keymap("i", "<C-k>", "<cmd>lua require'luasnip'.expand_or_jump()<CR>", {silent = true})
 keymap("n", "<C-d>", "<C-d>zz")
 keymap("n", "<C-u>", "<C-u>zz")
@@ -69,3 +68,8 @@ keymap("n", "ge", function()
     vim.api.nvim_feedkeys(":e " .. path, "n", false)
 end, { noremap = true })
 
+
+-- bar keymaps
+keymap("n" , "<Tab>" , "<Cmd>BufferNext<CR>" , { silent = true })
+keymap("n" , "<S-Tab>" , "<Cmd>BufferPrevious<CR>" , { silent = true })
+keymap('n', '<leader>w', '<Cmd>BufferClose<CR>', { silent = true })
