@@ -209,16 +209,23 @@ return require('packer').startup(function(use)
     -- }
     --
 
-    use {
-        "ydkulks/cursor-dark.nvim",
-        config = function()
-            require("cursor-dark").setup({
-                style = "dark-midnight",
-                transparent = true,
-                dashboard = true,
-            })
+    -- use {
+    --     "ydkulks/cursor-dark.nvim",
+    --     config = function()
+    --         require("cursor-dark").setup({
+    --             style = "dark-midnight",
+    --             transparent = true,
+    --             dashboard = true,
+    --         })
+    --
+    --         vim.cmd("colorscheme cursor-dark")
+    --     end
+    -- }
 
-            vim.cmd("colorscheme cursor-dark")
+    use{
+        "oskarnurm/koda.nvim",
+        config = function ()
+            vim.cmd("colorscheme koda-dark")
         end
     }
 
