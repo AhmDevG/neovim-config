@@ -3,18 +3,6 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     use ('wbthomason/packer.nvim')
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.8', requires = { {'nvim-lua/plenary.nvim'} }, } 
-    -- use({
-    --     'navarasu/onedark.nvim',
-    --     as = 'onedark',
-    --     config = function ()
-    --         require('onedark').setup({
-    --             style = 'darker',
-    --             transparent = true
-    --         })
-    --         require('onedark').load()
-    --     end
-    -- })
-    --use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
     use('mbbill/undotree')
 
     use({
@@ -37,27 +25,6 @@ return require('packer').startup(function(use)
             "rafamadriz/friendly-snippets",
         }
     })
-
-    -- use({
-    --     "zbirenbaum/copilot.lua",
-    --     event = "InsertEnter",
-    --     config = function()
-    --         require("copilot").setup({
-    --             suggestion = {
-    --                 enabled = true,
-    --                 auto_trigger = true,
-    --                 keymap = {
-    --                     accept = "<C-l>",  						
-    --                     next = "<M-]>",
-    --                     prev = "<M-[>",
-    --                     dismiss = "<C-]>",
-    --                 },
-    --             },
-    --             panel = { enabled = true },
-    --         })
-    --     end
-    -- })
-
 
     use({
         'numToStr/Comment.nvim',
@@ -200,37 +167,21 @@ return require('packer').startup(function(use)
             end, { desc = "Recompile" })
         end
     }
-    --
-    -- use {
-    --     "bavajitu/brellary.nvim",
-    --     config = function()
-    --         vim.cmd("colorscheme brellary")
-    --     end
-    -- }
-    --
-
-    -- use {
-    --     "ydkulks/cursor-dark.nvim",
-    --     config = function()
-    --         require("cursor-dark").setup({
-    --             style = "dark-midnight",
-    --             transparent = true,
-    --             dashboard = true,
-    --         })
-    --
-    --         vim.cmd("colorscheme cursor-dark")
-    --     end
-    -- }
-
-    use{
-        "oskarnurm/koda.nvim",
-        config = function ()
-            vim.cmd("colorscheme koda-dark")
+    use {
+        "rebelot/kanagawa.nvim",
+        config = function()
+            require("kanagawa").setup({
+                theme = "wave",
+            })
+            vim.cmd("colorscheme kanagawa-dragon")
         end
     }
+
 
     use {'nvim-tree/nvim-web-devicons'}
     use {'lewis6991/gitsigns.nvim'}
     use {'romgrk/barbar.nvim'}
+    use {"tpope/vim-fugitive"}
+
 
 end)
