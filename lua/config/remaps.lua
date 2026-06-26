@@ -86,6 +86,8 @@ keymap("n", "<leader>ga", "<cmd>Git add .<CR>", { desc = "Git Add All" })
 
 keymap("n", "<leader>gs", "<cmd>Git stash <CR>", { desc = "Git stash changes" })
 
+keymap("n", "<leader>gsp", "<cmd>Git stash pop<CR>", { desc = "Git stash pop changes" })
+
 keymap("n", "<leader>gc", "<cmd>Git commit<CR>", { desc = "Git Commit" })
 
 keymap("n", "<leader>gp", "<cmd>Git push<CR>", { desc = "Git Push" })
