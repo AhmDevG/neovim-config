@@ -94,7 +94,7 @@ keymap("n", "<leader>gp", "<cmd>Git push<CR>", { desc = "Git Push" })
 
 keymap("n", "<leader>gP", "<cmd>Git pull --rebase<CR>", { desc = "Git Pull Rebase" })
 
-keymap("n", "<leader>gu", "<cmd>Git push -u origin ", { desc = "Git Push Upstream" })
+keymap("n", "<leader>gu", "<cmd>Git push -u origin <CR>", { desc = "Git Push Upstream" })
 
 -- Merge conflicts
 keymap("n", "<leader>gh", "<cmd>diffget //2<CR>", { desc = "Take Left" })
