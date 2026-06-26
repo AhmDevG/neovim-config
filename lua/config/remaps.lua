@@ -82,7 +82,7 @@ end
 -- git keymaps -- 
 keymap("n", "gs", vim.cmd.Git)
 
-keymap("n", "ga", vim.cmd("Git add ."))
+keymap("n", "gp", vim.cmd("Git add ."))
 
 keymap("n", "gc", vim.cmd("Git commit"))
 
