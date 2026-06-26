@@ -78,3 +78,24 @@ keymap("n", "<leader>0", "<Cmd>BufferLast<CR>")
 for i = 1, 9 do
     keymap("n", "<leader>" .. i, "<Cmd>BufferGoto " .. i .. "<CR>")
 end
+
+-- git keymaps -- 
+keymap("n", "gs", vim.cmd.Git)
+
+keymap("n", "ga", vim.cmd("Git add ."))
+
+keymap("n", "gc", vim.cmd("Git commit"))
+
+keymap("n", "<leader>p", function()
+    vim.cmd.Git('push')
+end, opts)
+
+
+keymap("n", "<leader>P", function()
+    vim.cmd.Git({'pull',  '--rebase'})
+end, opts)
+
+keymap("n", "<leader>t", ":Git push -u origin ", opts);
+
+keymap("n", "gu", "<cmd>diffget //2<CR>")
+keymap("n", "gh", "<cmd>diffget //3<CR>")
