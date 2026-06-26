@@ -79,23 +79,19 @@ for i = 1, 9 do
     keymap("n", "<leader>" .. i, "<Cmd>BufferGoto " .. i .. "<CR>")
 end
 
--- git keymaps -- 
-keymap("n", "gs", vim.cmd.Git)
+-- Git
+keymap("n", "<leader>gg", "<cmd>Git<CR>", { desc = "Git Status" })
 
-keymap("n", "gp", vim.cmd("Git add ."))
+keymap("n", "<leader>ga", "<cmd>Git add .<CR>", { desc = "Git Add All" })
 
-keymap("n", "gc", vim.cmd("Git commit"))
+keymap("n", "<leader>gc", "<cmd>Git commit<CR>", { desc = "Git Commit" })
 
-keymap("n", "<leader>p", function()
-    vim.cmd.Git('push')
-end, opts)
+keymap("n", "<leader>gp", "<cmd>Git push<CR>", { desc = "Git Push" })
 
+keymap("n", "<leader>gP", "<cmd>Git pull --rebase<CR>", { desc = "Git Pull Rebase" })
 
-keymap("n", "<leader>P", function()
-    vim.cmd.Git({'pull',  '--rebase'})
-end, opts)
+keymap("n", "<leader>gu", "<cmd>Git push -u origin ", { desc = "Git Push Upstream" })
 
-keymap("n", "<leader>t", ":Git push -u origin ", opts);
-
-keymap("n", "gu", "<cmd>diffget //2<CR>")
-keymap("n", "gh", "<cmd>diffget //3<CR>")
+-- Merge conflicts
+keymap("n", "<leader>gh", "<cmd>diffget //2<CR>", { desc = "Take Left" })
+keymap("n", "<leader>gl", "<cmd>diffget //3<CR>", { desc = "Take Right" })

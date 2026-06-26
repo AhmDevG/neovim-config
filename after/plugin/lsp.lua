@@ -71,7 +71,7 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
 
   -- Rename & Code Action
-  vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+  vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, opts)
   vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 
   -- Formatting
