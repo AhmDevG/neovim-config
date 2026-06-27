@@ -185,23 +185,8 @@ return require('packer').startup(function(use)
     use {'romgrk/barbar.nvim'}
     use {"tpope/vim-fugitive"}
 
-    use {
-        "catppuccin/nvim",
-        as = "catppuccin",
-        config = function ()
-            require("catppuccin").setup({
-                integrations = {
-                    cmp = true,
-                    gitsigns = true,
-                },
-                background = {
-                    light = "mocha" ,
-                    dark = "mocha" ,
-                }
-            })
-            vim.cmd("colorscheme catppuccin-mocha")
-        end
-    }
-
+    use{"onsails/lspkind.nvim"}
+    use{"oskarnurm/koda.nvim"}
+    use {"catppuccin/nvim", as = "catppuccin"}
 
 end)
