@@ -12,7 +12,7 @@ vim.keymap.set('n', '<leader>fW', function()
     builtin.grep_string({ search = vim.fn.expand("<cWORD>"), previewer = false })
 end)
 
-vim.keymap.set('n', '<leader>vh', function()
+vim.keymap.set('n', '<leader>fh', function()
     builtin.help_tags({ previewer = false })
 end, {})
 
