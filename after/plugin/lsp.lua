@@ -1,126 +1,160 @@
 local lsp = require("lsp-zero")
+local lspconfig = require("lspconfig")
+local cmp = require("cmp")
+local lspkind = require("lspkind")
+
 lsp.preset("recommended")
 
--- CMP Setup
-local cmp = require("cmp")
 cmp.setup({
-  snippet = {
-    expand = function(args)
-      vim.fn["vsnip#anonymous"](args.body)
-    end,
-  },
+    snippet = {
+        expand = function(args)
+            vim.fn["vsnip#anonymous"](args.body)
+        end,
+    },
 
-  mapping = cmp.mapping.preset.insert({
-    ["<Tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      elseif vim.fn  == 1 then
-        vim.api.nvim_feedkeys(
-          vim.api.nvim_replace_termcodes("<Plug>(vsnip-expand-or-jump)", true, true, true),
-          "",
-          true
-        )
-      else
-        fallback()
-      end
-    end, { "i", "s" }),
+    window = {
+        completion = cmp.config.window.bordered({
+            border = "rounded",
+        }),
+        documentation = cmp.config.window.bordered({
+            border = "rounded",
+        }),
+    },
 
-    ["<S-Tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_prev_item()
-      elseif vim.fn["vsnip#jumpable"](-1) == 1 then
-        vim.api.nvim_feedkeys(
-          vim.api.nvim_replace_termcodes("<Plug>(vsnip-jump-prev)", true, true, true),
-          "",
-          true
-        )
-      else
-        fallback()
-      end
-    end, { "i", "s" }),
+    formatting = {
+        fields = { "kind", "abbr", "menu" },
 
-    ["<CR>"] = cmp.mapping.confirm({ select = true }),
-  }),
+        format = lspkind.cmp_format({
+            mode = "symbol_text",
 
-  sources = {
-    { name = "nvim_lsp" },
-    { name = "vsnip" },
-    { name = "buffer" },
-    { name = "path" },
-  },
+            menu = {
+                nvim_lsp = "[LSP]",
+                buffer = "[BUF]",
+                path = "[PATH]",
+                vsnip = "[SNIP]",
+            },
+        }),
+    },
+
+    mapping = cmp.mapping.preset.insert({
+
+        ["<Tab>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+                cmp.select_next_item()
+            elseif vim.fn["vsnip#available"](1) == 1 then
+                vim.api.nvim_feedkeys(
+                    vim.api.nvim_replace_termcodes(
+                        "<Plug>(vsnip-expand-or-jump)",
+                        true,
+                        true,
+                        true
+                    ),
+                    "",
+                    true
+                )
+            else
+                fallback()
+            end
+        end, { "i", "s" }),
+
+        ["<S-Tab>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+                cmp.select_prev_item()
+            elseif vim.fn["vsnip#jumpable"](-1) == 1 then
+                vim.api.nvim_feedkeys(
+                    vim.api.nvim_replace_termcodes(
+                        "<Plug>(vsnip-jump-prev)",
+                        true,
+                        true,
+                        true
+                    ),
+                    "",
+                    true
+                )
+            else
+                fallback()
+            end
+        end, { "i", "s" }),
+
+        ["<CR>"] = cmp.mapping.confirm({
+            select = true,
+        }),
+
+        ["<C-Space>"] = cmp.mapping.complete(),
+
+        ["<C-e>"] = cmp.mapping.abort(),
+    }),
+
+    sources = cmp.config.sources({
+        { name = "nvim_lsp" },
+        { name = "vsnip" },
+        { name = "path" },
+        { name = "buffer" },
+    }),
 })
 
--- Mason
 require("mason").setup()
+
 require("mason-lspconfig").setup({
-  ensure_installed = {"lua_ls"},
+    ensure_installed = {
+        "lua_ls",
+        "pyright",
+        "clangd",
+    },
 })
 
--- LSP-zero Setup + Keymaps
-lsp.on_attach(function(client, bufnr)
-  local opts = { buffer = bufnr, remap = false }
 
-  -- GoTo
-  vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-  vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-  vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-  vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
+lsp.on_attach(function(_, bufnr)
+    local opts = { buffer = bufnr, remap = false }
 
-  -- Hover & Signature
-  vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-  vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
+    vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+    vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
+    vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+    vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
 
-  -- Rename & Code Action
-  vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, opts)
-  vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+    vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+    vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
 
-  -- Formatting
-  vim.keymap.set("n", "<leader>f", function()
-    vim.lsp.buf.format({ async = true })
-  end, opts)
+    vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, opts)
+    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+
+    vim.keymap.set("n", "<leader>f", function()
+        vim.lsp.buf.format({ async = true })
+    end, opts)
 end)
+
+
+
+
 
 lspconfig.lua_ls.setup({})
 
-vim.api.nvim_create_auto_cmd("FileType" ,{
-    pattern = "python",
-    callback = function ()
-        require("lspconfig").pyright.setup({
-          settings = {
-            python = {
-              pythonPath =
-                "C:/Users/Ahmed-PC/AppData/Local/Programs/Python/Python312/python.exe",
-            },
-          },
-        })
-    end
-
+lspconfig.pyright.setup({
+    settings = {
+        python = {
+            pythonPath = "C:/Users/Ahmed-PC/AppData/Local/Programs/Python/Python312/python.exe",
+        },
+    },
 })
 
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "javascript", "typescript" },
-  callback = function()
-    require("lspconfig").tsserver.setup({})
-  end
-})
+lspconfig.clangd.setup({})
 
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "cpp",
-  callback = function()
-    require("lspconfig").clangd.setup({})
-  end
-})
+lspconfig.tsserver.setup({})
+
+
+
 
 
 lsp.setup()
 
 vim.diagnostic.config({
-  virtual_text = {
-    prefix = "●",
-    spacing = 4,
-  },
-  signs = true,
-  underline = true,
-  update_in_insert = false,
-  severity_sort = true,
+    virtual_text = {
+        prefix = "●",
+        spacing = 4,
+    },
+
+    signs = true,
+    underline = true,
+    update_in_insert = false,
+    severity_sort = true,
 })
