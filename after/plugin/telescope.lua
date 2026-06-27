@@ -28,3 +28,10 @@ end, {})
 vim.keymap.set("n", "<leader>fg", function()
     builtin.grep_string({ search = vim.fn.input("Grep > "), previewer = false })
 end)
+
+vim.keymap.set("n", "<leader>fd", function()
+    builtin.find_files{
+        cwd = vim.fn.stdpath("config"),
+        previewer = false
+    }
+end)
