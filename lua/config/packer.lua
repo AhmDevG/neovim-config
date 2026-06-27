@@ -179,22 +179,28 @@ return require('packer').startup(function(use)
             end, { desc = "Recompile" })
         end
     }
-    use {
-        "rebelot/kanagawa.nvim",
-        config = function()
-            require("kanagawa").setup({
-                theme = "wave",
-            })
-            vim.cmd("colorscheme kanagawa-dragon")
-        end
-    }
-
 
     use {'nvim-tree/nvim-web-devicons'}
     use {'lewis6991/gitsigns.nvim'}
     use {'romgrk/barbar.nvim'}
     use {"tpope/vim-fugitive"}
 
+    use {
+        "catppuccin/nvim",
+        as = "catppuccin",
+        config = function ()
+            require("catppuccin").setup({
+                integrations = {
+                    cmp = true,
+                    gitsigns = true,
+                },
+                background = {
+                    light = "mocha" ,
+                    dark = "mocha" ,
+                }
+            })
+        end
+    }
 
 
 end)
