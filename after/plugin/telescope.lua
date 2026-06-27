@@ -35,5 +35,3 @@ vim.keymap.set("n", "<leader>fd", function()
         previewer = false
     }
 end)
-
-builtin.load_extension("fzf");
