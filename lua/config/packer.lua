@@ -2,7 +2,19 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     use ('wbthomason/packer.nvim')
-    use { 'nvim-telescope/telescope.nvim', tag = '0.1.8', requires = { {'nvim-lua/plenary.nvim'} }, } 
+    use { 'nvim-telescope/telescope.nvim', tag = '0.1.8',
+        requires = {
+            {'nvim-lua/plenary.nvim'},
+            {'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release --target install' },
+        },
+        config = function ()
+            require('telescope').setup{
+                extensions = {
+                    fzf = {}
+                }
+            }
+        end
+    }
     use('mbbill/undotree')
 
     use({
@@ -182,6 +194,7 @@ return require('packer').startup(function(use)
     use {'lewis6991/gitsigns.nvim'}
     use {'romgrk/barbar.nvim'}
     use {"tpope/vim-fugitive"}
+
 
 
 end)
