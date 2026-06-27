@@ -199,6 +199,7 @@ return require('packer').startup(function(use)
                     dark = "mocha" ,
                 }
             })
+            vim.cmd("colorscheme catppuccin-mocha")
         end
     }
 
