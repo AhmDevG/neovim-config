@@ -1,5 +1,5 @@
+--- @diagnostic disable
 local lsp = require("lsp-zero")
-local lspconfig = require("lspconfig")
 local cmp = require("cmp")
 local lspkind = require("lspkind")
 
@@ -93,15 +93,7 @@ cmp.setup({
     }),
 })
 
-require("mason").setup()
 
-require("mason-lspconfig").setup({
-    ensure_installed = {
-        "lua_ls",
-        "pyright",
-        "clangd",
-    },
-})
 
 
 lsp.on_attach(function(_, bufnr)
@@ -125,25 +117,30 @@ end)
 
 
 
-
-
-lspconfig.lua_ls.setup({})
-
-lspconfig.pyright.setup({
-    settings = {
-        python = {
-            pythonPath = "C:/Users/Ahmed-PC/AppData/Local/Programs/Python/Python312/python.exe",
-        },
+require("mason").setup()
+require("mason-lspconfig").setup({
+    ensure_installed = {
+        "lua_ls",
+        "pyright",
+        "clangd",
+        "ts_ls",
+    },
+    handlers = {
+        function(server_name)
+            require('lspconfig')[server_name].setup({})
+        end,
+        
+        ["pyright"] = function()
+            require('lspconfig').pyright.setup({
+                settings = {
+                    python = {
+                        pythonPath = "C:/Users/Ahmed-PC/AppData/Local/Programs/Python/Python312/python.exe",
+                    },
+                },
+            })
+        end,
     },
 })
-
-lspconfig.clangd.setup({})
-
-lspconfig.tsserver.setup({})
-
-
-
-
 
 lsp.setup()
 
@@ -152,7 +149,6 @@ vim.diagnostic.config({
         prefix = "●",
         spacing = 4,
     },
-
     signs = true,
     underline = true,
     update_in_insert = false,
