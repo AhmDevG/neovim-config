@@ -105,5 +105,5 @@ keymap("n", "<leader>gl", "<cmd>diffget //3<CR>", { desc = "Take Right" })
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- quick fix list remaps
-vim.keymap.set("n", "<leader>n", "<cmd>cnext<CR>", {desc = "Navigated to the next element in the quick fix list"})
-vim.keymap.set("n", "<leader>p", "<cmd>cprevious<CR>", {desc = "Navigated to the prev element in the quick fix list"})
+vim.keymap.set("n", "[n", "<cmd>cnext<CR>", {desc = "Navigated to the next element in the quick fix list"})
+vim.keymap.set("n", "]p", "<cmd>cprevious<CR>", {desc = "Navigated to the prev element in the quick fix list"})
