@@ -70,13 +70,13 @@ end, { noremap = true })
 
 
 -- bar keymaps
-keymap("n" , "<Tab>" , "<Cmd>BufferNext<CR>" , { silent = true })
-keymap("n" , "<S-Tab>" , "<Cmd>BufferPrevious<CR>" , { silent = true })
+keymap("n" , "<A-l>" , "<Cmd>BufferNext<CR>" , { silent = true })
+keymap("n" , "<A-h>" , "<Cmd>BufferPrevious<CR>" , { silent = true })
 keymap('n', '<leader>w', '<Cmd>BufferClose<CR>', { silent = true })
-keymap("n", "<leader>0", "<Cmd>BufferLast<CR>")
+keymap("n", "<A-0>", "<Cmd>BufferLast<CR>")
 
 for i = 1, 9 do
-    keymap("n", "<leader>" .. i, "<Cmd>BufferGoto " .. i .. "<CR>")
+    keymap("n", "<A-" .. i .. ">", "<Cmd>BufferGoto " .. i .. "<CR>")
 end
 
 -- Git
@@ -105,5 +105,5 @@ keymap("n", "<leader>gl", "<cmd>diffget //3<CR>", { desc = "Take Right" })
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- quick fix list remaps
-vim.keymap.set("n", "[n", "<cmd>cnext<CR>", {desc = "Navigated to the next element in the quick fix list"})
-vim.keymap.set("n", "]p", "<cmd>cprevious<CR>", {desc = "Navigated to the prev element in the quick fix list"})
+vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>", {desc = "Navigated to the next element in the quick fix list"})
+vim.keymap.set("n", "<M-k>", "<cmd>cprevious<CR>", {desc = "Navigated to the prev element in the quick fix list"})
