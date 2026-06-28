@@ -189,4 +189,12 @@ return require('packer').startup(function(use)
     use{"oskarnurm/koda.nvim"}
     use {"catppuccin/nvim", as = "catppuccin"}
 
+    use({
+        "stevearc/oil.nvim",
+        config = function()
+            require("oil").setup()
+        end,
+    })
+
+
 end)

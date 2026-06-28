@@ -5,7 +5,7 @@ vim.g.mapleader = " "
 local keymap = vim.keymap.set
 
 
-keymap("n" , "<leader>v" , vim.cmd.Ex)
+-- keymap("n" , "<leader>v" , vim.cmd.Ex)
 keymap("v" , "J" , ":m '>+1<CR>gv=gv")
 keymap("v" , "K" , ":m '<-2<CR>gv=gv")
 keymap("n", "<leader>rr", ":CompetiTest run<CR>", { noremap = true, silent = true, desc = "Run testcases" })
@@ -99,3 +99,7 @@ keymap("n", "<leader>gu", "<cmd>Git push -u origin <CR>", { desc = "Git Push Ups
 -- Merge conflicts
 keymap("n", "<leader>gh", "<cmd>diffget //2<CR>", { desc = "Take Left" })
 keymap("n", "<leader>gl", "<cmd>diffget //3<CR>", { desc = "Take Right" })
+
+
+-- oil keymaps
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
