@@ -30,8 +30,12 @@ vim.keymap.set("n", "<leader>fg", function()
 end)
 
 vim.keymap.set("n", "<leader>fd", function()
-    builtin.find_files{
+    builtin.find_files {
         cwd = vim.fn.stdpath("config"),
         previewer = false
     }
 end)
+
+vim.keymap.set("n" , "<leader>fs", "<cmd>AutoSession search<CR>")
+vim.keymap.set("n" , "<C-s>", "<cmd>AutoSession toggle<CR>")
+
