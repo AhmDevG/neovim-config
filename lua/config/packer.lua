@@ -1,14 +1,14 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-    use ('wbthomason/packer.nvim')
+    use('wbthomason/packer.nvim')
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.8',
         requires = {
-            {'nvim-lua/plenary.nvim'},
-            {'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release --target install' },
+            { 'nvim-lua/plenary.nvim' },
+            { 'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release --target install' },
         },
-        config = function ()
-            require('telescope').setup{
+        config = function()
+            require('telescope').setup {
                 extensions = {
                     fzf = {}
                 }
@@ -21,15 +21,15 @@ return require('packer').startup(function(use)
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
         requires = {
-            {'neovim/nvim-lspconfig'},
-            {'williamboman/mason.nvim'},
-            {'williamboman/mason-lspconfig.nvim'},
+            { 'neovim/nvim-lspconfig' },
+            { 'williamboman/mason.nvim' },
+            { 'williamboman/mason-lspconfig.nvim' },
 
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'hrsh7th/cmp-buffer'},
-            {'hrsh7th/cmp-path'},
-            {'hrsh7th/cmp-nvim-lua'},
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'hrsh7th/cmp-buffer' },
+            { 'hrsh7th/cmp-path' },
+            { 'hrsh7th/cmp-nvim-lua' },
 
             "hrsh7th/vim-vsnip",
             "hrsh7th/cmp-vsnip",
@@ -50,7 +50,7 @@ return require('packer').startup(function(use)
     use({
         'xeluxee/competitest.nvim',
         requires = { 'MunifTanjim/nui.nvim' },
-        ft = {'cpp'},
+        ft = { 'cpp' },
         config = function()
             local competi = require('competitest')
 
@@ -109,15 +109,15 @@ return require('packer').startup(function(use)
     use {
         "windwp/nvim-autopairs",
         config = function()
-            require("nvim-autopairs").setup{}
+            require("nvim-autopairs").setup {}
         end
     }
 
     use {
-	    "norcalli/nvim-colorizer.lua",
-	    config = function()
-		require("colorizer").setup()
-	    end
+        "norcalli/nvim-colorizer.lua",
+        config = function()
+            require("colorizer").setup()
+        end
     }
 
     use {
@@ -146,7 +146,8 @@ return require('packer').startup(function(use)
                     end
 
                     if ft == "cpp" then
-                        return "g++ -std=c++17 -O2 -Wall \"" .. file .. "\" -o \"" .. file_no_ext .. "\" && \"" .. file_no_ext .. "\""
+                        return "g++ -std=c++17 -O2 -Wall \"" ..
+                        file .. "\" -o \"" .. file_no_ext .. "\" && \"" .. file_no_ext .. "\""
                     elseif ft == "python" then
                         return "python \"" .. file .. "\""
                     elseif ft == "javascript" then
@@ -180,14 +181,15 @@ return require('packer').startup(function(use)
         end
     }
 
+    use { 'lewis6991/gitsigns.nvim' }
+    use { 'romgrk/barbar.nvim' }
     use {'nvim-tree/nvim-web-devicons'}
-    use {'lewis6991/gitsigns.nvim'}
-    use {'romgrk/barbar.nvim'}
-    use {"tpope/vim-fugitive"}
 
-    use{"onsails/lspkind.nvim"}
-    use{"oskarnurm/koda.nvim"}
-    use {"catppuccin/nvim", as = "catppuccin"}
+    use { "tpope/vim-fugitive" }
+
+    use { "onsails/lspkind.nvim" }
+    use { "oskarnurm/koda.nvim" }
+    use { "catppuccin/nvim", as = "catppuccin" }
 
     use({
         "stevearc/oil.nvim",
@@ -196,5 +198,16 @@ return require('packer').startup(function(use)
         end,
     })
 
+    use({
+        "github/copilot.vim"
+    })
 
+    use({
+        "rmagatti/auto-session",
+        config = function()
+            require("auto-session").setup {
+                auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
+            }
+        end
+    })
 end)
