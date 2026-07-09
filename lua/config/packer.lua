@@ -164,10 +164,6 @@ return require('packer').startup(function(use)
                     split = "below",
                     size = 12,
                 },
-
-                auto_close = false,
-                auto_scroll = true,
-                use_terminal = true,
             }
 
             vim.keymap.set("n", "<leader>r", function()
