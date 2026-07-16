@@ -1,3 +1,3 @@
-local current_theme = "catppuccin-nvim"
+local current_theme = "retrobox"
 
 vim.cmd("colorscheme " .. current_theme)
