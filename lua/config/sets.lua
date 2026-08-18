@@ -42,3 +42,11 @@ vim.cmd("set timeoutlen=500")
 vim.cmd("set ttimeoutlen=10")
 vim.opt.redrawtime = 1500
 vim.opt.synmaxcol = 200
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+    desc = "Highlight when yanking text",
+    group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
+    callback = function()
+        vim.hl.on_yank()
+    end,
+})
