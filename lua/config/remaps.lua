@@ -19,7 +19,7 @@ keymap("i", "<C-k>", "<cmd>lua require'luasnip'.expand_or_jump()<CR>", {silent =
 keymap("n", "<C-d>", "<C-d>zz")
 keymap("n", "<C-u>", "<C-u>zz")
 keymap("x", "<leader>p", [["_dP]])
-keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+keymap("n", "<leader>s", [[:s/\<<C-r><C-w>\>/<C-r><C-w>/gc<Left><Left><Left>]])
 keymap("n", "<leader>vpp", "<cmd>e  C:/Users/Ahmed-PC/AppData/Local/nvim/lua/config/packer.lua<CR>");
 keymap("n", "<leader><leader>", function()
     vim.cmd("so")

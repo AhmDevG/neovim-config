@@ -37,10 +37,33 @@ cmp.setup({
     },
 
     mapping = cmp.mapping.preset.insert({
-        ["<Tab>"] = cmp.config.disable,
-        ["<S-Tab>"] = cmp.config.disable,
 
-        ["<CR>"] = cmp.mapping.confirm({
+        ["<Tab>"] = cmp.mapping(function(fallback)
+
+            if vim.fn["vsnip#available"](1) == 1 then
+                vim.fn.feedkeys(
+                    vim.api.nvim_replace_termcodes("<Plug>(vsnip-expand-or-jump)" , true , true , true)  ,  ""
+                )
+            else 
+                fallback()
+            end
+
+        end, { "i", "s" }),
+
+        ["<S-Tab>"] = cmp.mapping(function(fallback)
+
+            if vim.fn["vsnip#jumpable"](-1) == 1 then 
+                vim.fn.feedkeys(
+                    vim.api.nvim_replace_termcodes("<Plug>(vsnip-jump-prev)" , true  , true , true) , 
+                    ""
+                )
+            else
+                fallback()
+            end
+
+        end, { "i", "s" }),
+
+        ["<C-y>"] = cmp.mapping.confirm({
             select = true,
         }),
 

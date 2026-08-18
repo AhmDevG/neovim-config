@@ -122,7 +122,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["competitest.nvim"] = {
-    config = { "\27LJ\2\n²\1\0\1\b\0\n\0\0206\1\0\0009\1\1\1'\3\2\0009\4\3\0B\1\3\0026\2\4\0009\2\5\2'\4\6\0\18\5\1\0'\6\a\0&\4\6\4B\2\2\0016\2\0\0009\2\1\2'\4\b\0\18\5\1\0009\6\3\0009\a\t\0B\2\5\2L\2\2\0\tFEXT\r%s/%s.%s\6\"\fmkdir \"\fexecute\aos\fPROBLEM&D:/Problems/mostafa_saad_sheet/%s\vformat\vstringÔ\2\0\1\b\0\n\0\0236\1\0\0009\1\1\1'\3\2\0009\4\3\0&\3\4\3B\1\2\0019\1\4\0\a\1\5\0X\1\t€6\1\0\0009\1\6\0019\1\a\1)\3\0\0)\4\0\0)\5ÿÿ+\6\1\0005\a\b\0B\1\6\0016\1\0\0009\1\1\1'\3\t\0B\1\2\1K\0\1\0002call vsnip#expandable() ? vsnip#expand() : ''\1\n\0\0\29#include <bits/stdc++.h>\25using namespace std;\5\17int main() {%    ios::sync_with_stdio(false);\26    cin.tie(nullptr);\t    \18    return 0;\6}\23nvim_buf_set_lines\bapi\bcpp\tFEXT\rfilepath\nedit \bcmd\bvim¸\2\1\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\4\0003\4\3\0=\4\5\0035\4\6\0=\4\a\0033\4\b\0=\4\t\3B\1\2\1K\0\1\0\15on_receive\0\14editor_ui\1\0\4\16popup_width\4š³æÌ\t™³æþ\3\rshow_rnu\1\fshow_nu\2\17popup_height\4³æÌ™\3³æŒÿ\3\27receiver_problems_path\1\0\5\15on_receive\0*start_receiving_persistently_on_setup\1\14editor_ui\0\26receive_print_message\2\27receiver_problems_path\0\0\nsetup\16competitest\frequire\0" },
+    config = { "\27LJ\2\n²\1\0\1\b\0\n\0\0206\1\0\0009\1\1\1'\3\2\0009\4\3\0B\1\3\0026\2\4\0009\2\5\2'\4\6\0\18\5\1\0'\6\a\0&\4\6\4B\2\2\0016\2\0\0009\2\1\2'\4\b\0\18\5\1\0009\6\3\0009\a\t\0B\2\5\2L\2\2\0\tFEXT\r%s/%s.%s\6\"\fmkdir \"\fexecute\aos\fPROBLEM&D:/Problems/mostafa_saad_sheet/%s\vformat\vstringÔ\2\0\1\b\0\n\0\0236\1\0\0009\1\1\1'\3\2\0009\4\3\0&\3\4\3B\1\2\0019\1\4\0\a\1\5\0X\1\t€6\1\0\0009\1\6\0019\1\a\1)\3\0\0)\4\0\0)\5ÿÿ+\6\1\0005\a\b\0B\1\6\0016\1\0\0009\1\1\1'\3\t\0B\1\2\1K\0\1\0002call vsnip#expandable() ? vsnip#expand() : ''\1\n\0\0\29#include <bits/stdc++.h>\25using namespace std;\5\17int main() {%    ios::sync_with_stdio(false);\26    cin.tie(nullptr);\t    \18    return 0;\6}\23nvim_buf_set_lines\bapi\bcpp\tFEXT\rfilepath\nedit \bcmd\bvim¸\2\1\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\4\0003\4\3\0=\4\5\0035\4\6\0=\4\a\0033\4\b\0=\4\t\3B\1\2\1K\0\1\0\15on_receive\0\14editor_ui\1\0\4\16popup_width\4š³æÌ\t™³æþ\3\17popup_height\4³æÌ™\3³æŒÿ\3\fshow_nu\2\rshow_rnu\1\27receiver_problems_path\1\0\5\15on_receive\0\14editor_ui\0\26receive_print_message\2*start_receiving_persistently_on_setup\1\27receiver_problems_path\0\0\nsetup\16competitest\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -130,7 +130,7 @@ _G.packer_plugins = {
     url = "https://github.com/xeluxee/competitest.nvim"
   },
   ["compile-mode.nvim"] = {
-    config = { "\27LJ\2\n\4\0\0\n\0\23\0A6\0\0\0009\0\1\0009\0\2\0)\2\0\0B\0\2\2\18\3\0\0009\1\3\0'\4\4\0'\5\5\0B\1\4\0026\2\0\0009\2\6\0029\2\a\2\a\0\5\0X\3\5€6\3\b\0'\5\t\0B\3\2\1'\3\5\0L\3\2\0\a\2\n\0X\3\n€'\3\v\0\18\4\0\0'\5\f\0\18\6\1\0'\a\r\0\18\b\1\0'\t\14\0&\3\t\3L\3\2\0X\3 €\a\2\15\0X\3\6€'\3\16\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\24€\a\2\17\0X\3\6€'\3\18\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\16€\a\2\19\0X\3\6€'\3\20\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\b€6\3\b\0'\5\21\0\18\6\2\0'\a\22\0&\5\a\5B\3\2\1'\3\5\0L\3\2\0K\0\1\0> is not supported for compilation [ADD IT YOURSELF BIT*H]\15file type \14ts-node \"\15typescript\vnode \"\15javascript\rpython \"\vpython\6\"\v\" && \"\v\" -o \"\31g++ -std=c++17 -O2 -Wall \"\bcpp\22save file first !\nprint\rfiletype\abo\5\v%.%w+$\tgsub\22nvim_buf_get_name\bapi\bvimC\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0\18below Compile\6w\bcmd\bvim3\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\20below Recompile\bcmd\bvimº\2\1\0\6\0\17\0\0256\0\0\0009\0\1\0005\1\4\0003\2\3\0=\2\5\0015\2\6\0=\2\a\1=\1\2\0006\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\v\0003\4\f\0005\5\r\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\14\0003\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\14Recompile\0\14<leader>R\1\0\1\tdesc\18Compile & Run\0\14<leader>r\6n\bset\vkeymap\vwindow\1\0\2\nsplit\nbelow\tsize\3\f\20default_command\1\0\5\vwindow\0\16auto_scroll\2\20default_command\0\17use_terminal\2\15auto_close\1\0\17compile_mode\6g\bvim\0" },
+    config = { "\27LJ\2\n\4\0\0\n\0\23\0A6\0\0\0009\0\1\0009\0\2\0)\2\0\0B\0\2\2\18\3\0\0009\1\3\0'\4\4\0'\5\5\0B\1\4\0026\2\0\0009\2\6\0029\2\a\2\a\0\5\0X\3\5€6\3\b\0'\5\t\0B\3\2\1'\3\5\0L\3\2\0\a\2\n\0X\3\n€'\3\v\0\18\4\0\0'\5\f\0\18\6\1\0'\a\r\0\18\b\1\0'\t\14\0&\3\t\3L\3\2\0X\3 €\a\2\15\0X\3\6€'\3\16\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\24€\a\2\17\0X\3\6€'\3\18\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\16€\a\2\19\0X\3\6€'\3\20\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\b€6\3\b\0'\5\21\0\18\6\2\0'\a\22\0&\5\a\5B\3\2\1'\3\5\0L\3\2\0K\0\1\0> is not supported for compilation [ADD IT YOURSELF BIT*H]\15file type \14ts-node \"\15typescript\vnode \"\15javascript\rpython \"\vpython\6\"\v\" && \"\v\" -o \"\31g++ -std=c++17 -O2 -Wall \"\bcpp\22save file first !\nprint\rfiletype\abo\5\v%.%w+$\tgsub\22nvim_buf_get_name\bapi\bvimC\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0\18below Compile\6w\bcmd\bvim3\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\20below Recompile\bcmd\bvim“\2\1\0\6\0\17\0\0256\0\0\0009\0\1\0005\1\4\0003\2\3\0=\2\5\0015\2\6\0=\2\a\1=\1\2\0006\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\v\0003\4\f\0005\5\r\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\14\0003\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\14Recompile\0\14<leader>R\1\0\1\tdesc\18Compile & Run\0\14<leader>r\6n\bset\vkeymap\vwindow\1\0\2\tsize\3\f\nsplit\nbelow\20default_command\1\0\2\20default_command\0\vwindow\0\0\17compile_mode\6g\bvim\0" },
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\compile-mode.nvim",
     url = "https://github.com/ej-shafran/compile-mode.nvim"
@@ -208,7 +208,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["oil.nvim"] = {
-    config = { "\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0" },
+    config = { "\27LJ\2\nS\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\30skip_confirm_simple_edits\2\nsetup\boil\frequire\0" },
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\oil.nvim",
     url = "https://github.com/stevearc/oil.nvim"
@@ -233,6 +233,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Ahmed-PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
     loaded = true,
@@ -263,30 +268,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: oil.nvim
-time([[Config for oil.nvim]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
-time([[Config for oil.nvim]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
--- Config for: vim-exchange
-time([[Config for vim-exchange]], true)
-try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "vim-exchange")
-time([[Config for vim-exchange]], false)
 -- Config for: compile-mode.nvim
 time([[Config for compile-mode.nvim]], true)
-try_loadstring("\27LJ\2\n\4\0\0\n\0\23\0A6\0\0\0009\0\1\0009\0\2\0)\2\0\0B\0\2\2\18\3\0\0009\1\3\0'\4\4\0'\5\5\0B\1\4\0026\2\0\0009\2\6\0029\2\a\2\a\0\5\0X\3\5€6\3\b\0'\5\t\0B\3\2\1'\3\5\0L\3\2\0\a\2\n\0X\3\n€'\3\v\0\18\4\0\0'\5\f\0\18\6\1\0'\a\r\0\18\b\1\0'\t\14\0&\3\t\3L\3\2\0X\3 €\a\2\15\0X\3\6€'\3\16\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\24€\a\2\17\0X\3\6€'\3\18\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\16€\a\2\19\0X\3\6€'\3\20\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\b€6\3\b\0'\5\21\0\18\6\2\0'\a\22\0&\5\a\5B\3\2\1'\3\5\0L\3\2\0K\0\1\0> is not supported for compilation [ADD IT YOURSELF BIT*H]\15file type \14ts-node \"\15typescript\vnode \"\15javascript\rpython \"\vpython\6\"\v\" && \"\v\" -o \"\31g++ -std=c++17 -O2 -Wall \"\bcpp\22save file first !\nprint\rfiletype\abo\5\v%.%w+$\tgsub\22nvim_buf_get_name\bapi\bvimC\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0\18below Compile\6w\bcmd\bvim3\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\20below Recompile\bcmd\bvimº\2\1\0\6\0\17\0\0256\0\0\0009\0\1\0005\1\4\0003\2\3\0=\2\5\0015\2\6\0=\2\a\1=\1\2\0006\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\v\0003\4\f\0005\5\r\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\14\0003\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\14Recompile\0\14<leader>R\1\0\1\tdesc\18Compile & Run\0\14<leader>r\6n\bset\vkeymap\vwindow\1\0\2\nsplit\nbelow\tsize\3\f\20default_command\1\0\5\vwindow\0\16auto_scroll\2\20default_command\0\17use_terminal\2\15auto_close\1\0\17compile_mode\6g\bvim\0", "config", "compile-mode.nvim")
+try_loadstring("\27LJ\2\n\4\0\0\n\0\23\0A6\0\0\0009\0\1\0009\0\2\0)\2\0\0B\0\2\2\18\3\0\0009\1\3\0'\4\4\0'\5\5\0B\1\4\0026\2\0\0009\2\6\0029\2\a\2\a\0\5\0X\3\5€6\3\b\0'\5\t\0B\3\2\1'\3\5\0L\3\2\0\a\2\n\0X\3\n€'\3\v\0\18\4\0\0'\5\f\0\18\6\1\0'\a\r\0\18\b\1\0'\t\14\0&\3\t\3L\3\2\0X\3 €\a\2\15\0X\3\6€'\3\16\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\24€\a\2\17\0X\3\6€'\3\18\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\16€\a\2\19\0X\3\6€'\3\20\0\18\4\0\0'\5\14\0&\3\5\3L\3\2\0X\3\b€6\3\b\0'\5\21\0\18\6\2\0'\a\22\0&\5\a\5B\3\2\1'\3\5\0L\3\2\0K\0\1\0> is not supported for compilation [ADD IT YOURSELF BIT*H]\15file type \14ts-node \"\15typescript\vnode \"\15javascript\rpython \"\vpython\6\"\v\" && \"\v\" -o \"\31g++ -std=c++17 -O2 -Wall \"\bcpp\22save file first !\nprint\rfiletype\abo\5\v%.%w+$\tgsub\22nvim_buf_get_name\bapi\bvimC\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0\18below Compile\6w\bcmd\bvim3\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\20below Recompile\bcmd\bvim“\2\1\0\6\0\17\0\0256\0\0\0009\0\1\0005\1\4\0003\2\3\0=\2\5\0015\2\6\0=\2\a\1=\1\2\0006\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\v\0003\4\f\0005\5\r\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\14\0003\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\14Recompile\0\14<leader>R\1\0\1\tdesc\18Compile & Run\0\14<leader>r\6n\bset\vkeymap\vwindow\1\0\2\tsize\3\f\nsplit\nbelow\20default_command\1\0\2\20default_command\0\vwindow\0\0\17compile_mode\6g\bvim\0", "config", "compile-mode.nvim")
 time([[Config for compile-mode.nvim]], false)
 -- Config for: auto-session
 time([[Config for auto-session]], true)
 try_loadstring("\27LJ\2\n \1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\31auto_session_suppress_dirs\1\0\1\31auto_session_suppress_dirs\0\1\5\0\0\a~/\15~/Projects\16~/Downloads\6/\nsetup\17auto-session\frequire\0", "config", "auto-session")
 time([[Config for auto-session]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
 -- Config for: telescope.nvim
 time([[Config for telescope.nvim]], true)
 try_loadstring("\27LJ\2\nq\0\0\5\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\5\0005\3\3\0004\4\0\0=\4\4\3=\3\6\2B\0\2\1K\0\1\0\15extensions\1\0\1\15extensions\0\bfzf\1\0\1\bfzf\0\nsetup\14telescope\frequire\0", "config", "telescope.nvim")
@@ -295,6 +284,22 @@ time([[Config for telescope.nvim]], false)
 time([[Config for nvim-colorizer.lua]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14colorizer\frequire\0", "config", "nvim-colorizer.lua")
 time([[Config for nvim-colorizer.lua]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
+-- Config for: oil.nvim
+time([[Config for oil.nvim]], true)
+try_loadstring("\27LJ\2\nS\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\30skip_confirm_simple_edits\2\nsetup\boil\frequire\0", "config", "oil.nvim")
+time([[Config for oil.nvim]], false)
+-- Config for: vim-exchange
+time([[Config for vim-exchange]], true)
+try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "vim-exchange")
+time([[Config for vim-exchange]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
