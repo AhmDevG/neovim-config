@@ -11,6 +11,23 @@ return require('packer').startup(function(use)
             require('telescope').setup {
                 extensions = {
                     fzf = {}
+                },
+                pickers = {
+                    find_files = {
+                        theme = "dropdown" ,
+                    },
+                    git_files={
+                        theme = "dropdown",
+                    },
+                    grep_string={
+                        theme = "dropdown",
+                    },
+                    help_tags={
+                        theme = "dropdown",
+                    },
+                    diagnostics={
+                        theme = "dropdown",
+                    },
                 }
             }
         end
@@ -210,5 +227,10 @@ return require('packer').startup(function(use)
     })
 
     use ({ "folke/tokyonight.nvim" })
+
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate",
+    }
 
 end)
