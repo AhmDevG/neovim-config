@@ -242,17 +242,18 @@ return require('packer').startup(function(use)
 
     use {
         "rcarriga/nvim-dap-ui",
-        requires = { "mfussenegger/nvim-dap" }
+        requires = {
+            "mfussenegger/nvim-dap",
+            "nvim-neotest/nvim-nio",
+        }
     }
 
     use {
         "theHamsta/nvim-dap-virtual-text",
         requires = {
             "mfussenegger/nvim-dap",
-            "nvim-treesitter/nvim-treesitter",
         }
     }
-
     use {
         "rose-pine/neovim",
     }

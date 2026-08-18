@@ -108,8 +108,9 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>", {desc = "Navigated to the next element in the quick fix list"})
 vim.keymap.set("n", "<M-k>", "<cmd>cprevious<CR>", {desc = "Navigated to the prev element in the quick fix list"})
 
--- move in insert mode using ctrl + h/j/k/l
-vim.keymap.set("i", "<C-h>", "<Left>", {desc = "Move left"})
-vim.keymap.set("i", "<C-l>", "<Right>", {desc = "Move Right"})
-vim.keymap.set("i", "<C-k>", "<Up>", {desc = "Move Up"})
-vim.keymap.set("i", "<C-j>", "<Down>", {desc = "Move Down"})
+-- move to thte left/right/up/down window using Ctrl + {h,j,k,l}
+vim.keymap.set("n", "<C-h>", "<C-w>h", {desc = "Move to the left window"})
+vim.keymap.set("n", "<C-j>", "<C-w>j", {desc = "Move to the down window"})
+vim.keymap.set("n", "<C-k>", "<C-w>k", {desc = "Move to the up window"})
+vim.keymap.set("n", "<C-l>", "<C-w>l", {desc = "Move to the up window"})
+
