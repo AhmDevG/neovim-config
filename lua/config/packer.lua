@@ -14,18 +14,18 @@ return require('packer').startup(function(use)
                 },
                 pickers = {
                     find_files = {
-                        theme = "dropdown" ,
-                    },
-                    git_files={
                         theme = "dropdown",
                     },
-                    grep_string={
+                    git_files = {
                         theme = "dropdown",
                     },
-                    help_tags={
+                    grep_string = {
                         theme = "dropdown",
                     },
-                    diagnostics={
+                    help_tags = {
+                        theme = "dropdown",
+                    },
+                    diagnostics = {
                         theme = "dropdown",
                     },
                 }
@@ -164,7 +164,7 @@ return require('packer').startup(function(use)
 
                     if ft == "cpp" then
                         return "g++ -std=c++17 -O2 -Wall \"" ..
-                        file .. "\" -o \"" .. file_no_ext .. "\" && \"" .. file_no_ext .. "\""
+                            file .. "\" -o \"" .. file_no_ext .. "\" && \"" .. file_no_ext .. "\""
                     elseif ft == "python" then
                         return "python \"" .. file .. "\""
                     elseif ft == "javascript" then
@@ -196,7 +196,7 @@ return require('packer').startup(function(use)
 
     use { 'lewis6991/gitsigns.nvim' }
     use { 'romgrk/barbar.nvim' }
-    use {'nvim-tree/nvim-web-devicons'}
+    use { 'nvim-tree/nvim-web-devicons' }
 
     use { "tpope/vim-fugitive" }
 
@@ -208,7 +208,7 @@ return require('packer').startup(function(use)
         "stevearc/oil.nvim",
         config = function()
             require("oil").setup({
-                skip_confirm_simple_edits = true ,
+                skip_confirm_simple_edits = true,
             })
         end,
     })
@@ -226,11 +226,34 @@ return require('packer').startup(function(use)
         end
     })
 
-    use ({ "folke/tokyonight.nvim" })
+    use({ "folke/tokyonight.nvim" })
 
     use {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
     }
 
+
+    use "lukas-reineke/indent-blankline.nvim"
+
+    use {
+        "mfussenegger/nvim-dap"
+    }
+
+    use {
+        "rcarriga/nvim-dap-ui",
+        requires = { "mfussenegger/nvim-dap" }
+    }
+
+    use {
+        "theHamsta/nvim-dap-virtual-text",
+        requires = {
+            "mfussenegger/nvim-dap",
+            "nvim-treesitter/nvim-treesitter",
+        }
+    }
+
+    use {
+        "rose-pine/neovim",
+    }
 end)
