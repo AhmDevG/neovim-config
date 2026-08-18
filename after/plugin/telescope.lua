@@ -36,6 +36,7 @@ vim.keymap.set("n", "<leader>fd", function()
     }
 end)
 
+
 vim.keymap.set("n" , "<leader>fs", "<cmd>AutoSession search<CR>")
 vim.keymap.set("n" , "<C-s>", "<cmd>AutoSession toggle<CR>")
 
