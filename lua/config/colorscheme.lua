@@ -1,3 +1,12 @@
-local current_theme = "rose-pine-main"
+local colorscheme = "rose-pine"
 
-vim.cmd("colorscheme " .. current_theme)
+local function makeBgDark(color)
+	color = color or colorscheme
+	vim.cmd.colorscheme(color)
+
+	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
+end
+
+makeBgDark(colorscheme)

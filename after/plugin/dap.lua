@@ -1,7 +1,18 @@
 local dap = require("dap")
 local dapui = require("dapui")
 
-require("nvim-dap-virtual-text").setup()
+require("nvim-dap-virtual-text").setup({
+    enabled = true,
+    enabled_commands = true,
+    highlight_changed_variables = true,
+    highlight_new_as_changed = true,
+    show_stop_reason = true,
+    commented = false,
+    only_first_definition = false,
+    all_references = true,
+    virt_text_pos = "eol",
+})
+
 dapui.setup()
 
 dap.listeners.after.event_initialized["dapui"] = function()
