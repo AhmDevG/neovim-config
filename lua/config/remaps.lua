@@ -114,3 +114,6 @@ vim.keymap.set("n", "<C-j>", "<C-w>j", {desc = "Move to the down window"})
 vim.keymap.set("n", "<C-k>", "<C-w>k", {desc = "Move to the up window"})
 vim.keymap.set("n", "<C-l>", "<C-w>l", {desc = "Move to the up window"})
 
+
+-- terminal remap
+vim.keymap.set("n", "<leader>t", "<cmd>below terminal<CR>",{desc = "open a terminal below the current window"})
