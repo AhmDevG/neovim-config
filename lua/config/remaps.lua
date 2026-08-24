@@ -4,8 +4,6 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap.set
 
-
--- keymap("n" , "<leader>v" , vim.cmd.Ex)
 keymap("v" , "J" , ":m '>+1<CR>gv=gv")
 keymap("v" , "K" , ":m '<-2<CR>gv=gv")
 keymap("n", "<leader>rr", ":CompetiTest run<CR>", { noremap = true, silent = true, desc = "Run testcases" })
