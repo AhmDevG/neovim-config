@@ -66,6 +66,7 @@ keymap("n", "ge", function()
     vim.api.nvim_feedkeys(":e " .. path, "n", false)
 end, { noremap = true })
 
+keymap("n", "gb", ":b ", { noremap = true })
 
 -- bar keymaps
 keymap("n" , "<A-l>" , "<Cmd>BufferNext<CR>" , { silent = true })
@@ -100,18 +101,22 @@ keymap("n", "<leader>gl", "<cmd>diffget //3<CR>", { desc = "Take Right" })
 
 
 -- oil keymaps
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+keymap("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- quick fix list remaps
-vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>", {desc = "Navigated to the next element in the quick fix list"})
-vim.keymap.set("n", "<M-k>", "<cmd>cprevious<CR>", {desc = "Navigated to the prev element in the quick fix list"})
+keymap("n", "<M-j>", "<cmd>cnext<CR>", {desc = "Navigated to the next element in the quick fix list"})
+keymap("n", "<M-k>", "<cmd>cprevious<CR>", {desc = "Navigated to the prev element in the quick fix list"})
 
 -- move to thte left/right/up/down window using Ctrl + {h,j,k,l}
-vim.keymap.set("n", "<C-h>", "<C-w>h", {desc = "Move to the left window"})
-vim.keymap.set("n", "<C-j>", "<C-w>j", {desc = "Move to the down window"})
-vim.keymap.set("n", "<C-k>", "<C-w>k", {desc = "Move to the up window"})
-vim.keymap.set("n", "<C-l>", "<C-w>l", {desc = "Move to the up window"})
+keymap("n", "<C-h>", "<C-w>h", {desc = "Move to the left window"})
+keymap("n", "<C-j>", "<C-w>j", {desc = "Move to the down window"})
+keymap("n", "<C-k>", "<C-w>k", {desc = "Move to the up window"})
+keymap("n", "<C-l>", "<C-w>l", {desc = "Move to the up window"})
 
 
 -- terminal remap
-vim.keymap.set("n", "<leader>t", "<cmd>below terminal<CR>",{desc = "open a terminal below the current window"})
+keymap("n", "<leader>t", "<cmd>below terminal<CR>",{desc = "open a terminal below the current window"})
+
+-- keymap for (Tab|Shift+Tab) (indenting line)
+keymap("n" , "<S-Tab>" , "<<", {desc = "indent line"})
+keymap("n" , "<Tab>" , ">>", {desc = "deindent line"})
