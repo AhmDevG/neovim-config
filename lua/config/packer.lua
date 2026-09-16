@@ -185,14 +185,6 @@ return require('packer').startup(function(use)
         "github/copilot.vim"
     })
 
-    use({
-        "rmagatti/auto-session",
-        config = function()
-            require("auto-session").setup {
-                auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
-            }
-        end
-    })
 
     use({ "folke/tokyonight.nvim" })
 
@@ -210,24 +202,7 @@ return require('packer').startup(function(use)
     }
 
     use {
-        "mfussenegger/nvim-dap"
-    }
-
-    use {
-        "rcarriga/nvim-dap-ui",
-        requires = {
-            "mfussenegger/nvim-dap",
-            "nvim-neotest/nvim-nio",
-        }
-    }
-
-    use {
-        "theHamsta/nvim-dap-virtual-text",
-        requires = {
-            "mfussenegger/nvim-dap",
-        }
-    }
-    use {
         "rose-pine/neovim",
     }
+
 end)

@@ -1,4 +1,4 @@
-local colorscheme = "rose-pine"
+local colorscheme = "koda-dark"
 
 local function makeBgDark(color)
 	color = color or colorscheme
